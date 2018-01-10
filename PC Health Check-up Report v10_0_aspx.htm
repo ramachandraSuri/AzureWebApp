@@ -1,0 +1,2315 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	PC Health Check-up Report v10.0
+</title><link href="Style.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            height: 23px;
+        }
+        .auto-style2 {
+            height: 17px;
+        }
+        .auto-style3 {
+            height: 16px;
+        }
+        .auto-style4 {
+            width: 37px;
+        }
+        .auto-style5 {
+            width: 273px;
+        }
+        .auto-style6 {
+            width: 102px;
+        }
+        .auto-style7 {
+            width: 210px;
+        }
+        .auto-style8 {
+            height: 23px;
+            width: 210px;
+        }
+        .auto-style9 {
+            width: 502px;
+        }
+        .auto-style10 {
+            height: 23px;
+            width: 502px;
+        }
+        .auto-style11 {
+            height: 35px;
+        }
+        .auto-style12 {
+            width: 37px;
+            height: 23px;
+        }
+        .auto-style13 {
+            width: 273px;
+            height: 23px;
+        }
+    </style>
+
+    <style type="text/css">
+        
+          .modalBackground
+        {
+            background-color: Black;
+            filter: alpha(opacity=60);
+            opacity: 0.6;
+        }
+        .modalPopup
+        {
+            background-color: #FFFFFF;
+            width: 800px;
+            border: 3px solid #0DA9D0;
+            padding: 0;
+             background: white;
+  
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+
+  background-clip: padding-box;
+  height:260px;
+
+        }
+        .modalPopup .header
+        {
+            background-color: #5D5F5D;
+            height: 30px;
+            color: White;
+            line-height: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .modalPopup .body
+        {
+           
+
+           
+           font:bold  caption  20px; 
+             background-color: #fff;
+   
+                display: inline;
+
+                  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+        height:280px;
+ width:650px;
+  
+  
+  
+  
+  }
+
+        .btn {
+  font-size: 15px;
+  padding: 0.5em .5em;
+  background-color: #fff;
+  border: 2px solid #bbb;
+  color: #333;
+  text-decoration: none;
+    display: inline;
+  border-radius: 4px;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+  width:250px;
+  height:30px;
+ 
+}
+ .btn1 {
+  font-size: 15px;
+  padding: 0.5em .5em;
+  background-color: #fff;
+  border: 2px solid #bbb;
+  color: #333;
+  text-decoration: none;
+    display: inline;
+  border-radius: 4px;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+  width:250px;
+  height:40px;
+ 
+}
+     
+ .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/loading.gif) center no-repeat #fff;
+}
+
+
+
+
+
+
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+
+    <script>
+        // Wait for window load
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+
+
+
+        });
+
+
+
+    </script>
+</head>
+<body class="main">
+    <div class="se-pre-con"></div>
+    <form method="get" action="WebForm3.aspx" id="form2">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTgwNzc4NjAxZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WEgUMSW1hZ2VCdXR0b24xBQxJbWFnZUJ1dHRvbjIFDEltYWdlQnV0dG9uMwUNSW1hZ2VCdXR0b24xNwUNSW1hZ2VCdXR0b24xNQUMSW1hZ2VCdXR0b240BQ1JbWFnZUJ1dHRvbjE4BQ1JbWFnZUJ1dHRvbjE2BQxJbWFnZUJ1dHRvbjUFDEltYWdlQnV0dG9uNgUMSW1hZ2VCdXR0b243BQxJbWFnZUJ1dHRvbjgFDEltYWdlQnV0dG9uOQUNSW1hZ2VCdXR0b24xMAUNSW1hZ2VCdXR0b24xMQUNSW1hZ2VCdXR0b24xMgUNSW1hZ2VCdXR0b24xMwUNSW1hZ2VCdXR0b24xNJ3JMEt0CosjzLl1qOsfV+PqbbHL5z1JKVx5LkJGFnaN" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form2'];
+if (!theForm) {
+    theForm = document.form2;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/PCDetails/WebResource.axd?d=WPdUN3L-0bmZOWhCtVv4xtLh3UviSjEHmKDpmuvaP8drOx7YuLIGnMBfNimTBsBcM0hCbhashNfhY9zihiubwPtke4KX-XNa3WLxc9ExuKs1&amp;t=636423372100000000" type="text/javascript"></script>
+
+
+<script src="/PCDetails/ScriptResource.axd?d=K0GqyvbAe22JSiORQEw6v5myXICwBpodPpQErOKxHUoHq_bDqWuuN-_AAwhO2YaAJAs1Dm6QJE27XZcX7jwRqUrhmtbgeQ8xKzl7Ub4jQkFthlaa_hHoZ7kQD0yse3TJrFPT6PAuFMzSBWUDx-GxAw2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/PCDetails/ScriptResource.axd?d=7ccszntFUZHXhLPmB4Vxf4wV5p0DfwQ50-p8kKT5CZl1wTde7H61E0sZI11IzCqtLZtoOhMab4SB4zTUMSPLWp9GMY05LUwY_5QrpsN-z6sqbRkMGQGsL-9-0ffXml70Bnu8CUu6CF8hN6ShuCbmOA2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=wcaEpN-cE1J3Qm1G4yVsJLWsJXzc5QqQ8k6Jvwj-WyCkxuAg-AaSOI17ubbcmaTOTdLSXSJ_HR3D_PIvfzACMqbvaDb3BZ5QgeVI2qFIfIaWlrJpuXdw9wZhK-IZXcEl7I3WYyDwmJ5jz56x8C_9Uw2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=IMzPqWHqgktLnqOJ_npNdeg79zW1FRD02rqft4zCsfoKbJmjeARYnhippSbV6KLMDNWrIE-zc_jYmv4O2Fr5w2K544-rPIjGvteC6Q8F129NplKBT9KquAJ8FoX8CqJmK5MELX9wlgddplYRty_alw2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=soMHjlOZad6ztgmPcQ7anO5VDo2NSbY3tyfO7ZAOJJItDHuG6zUSLm5qN8LWM8YGx1CNsuWGY4-RfNpKXpRRZJJ_8yrxkP-K0NzMJsNClP84b-tKzg-DwOyY5Cknha4hE1Eyc7Hl8qZy2qObeONXQw2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=i3hovGC2KfNTev0E4M2l8r0s4VG2Zaq-lP22T2L5veK_UYMlqJCSYw3f0T4U8QQZRpQjj2iNFaBuGASklrXapH7QtJukNOEZG-e_MH67u8VrZnJJD80L7ZS5L7XSs_GatPxxL3SOuuZWnT-ND90VlQ2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=EUa35zfKbOmZGMlRhwe7U8Z6DUNOUMjsmAf5D1reJTJBQ8sx58gEzeRD36vPnZIBBUvc-kOQ2mZ2JSYGM_E5PpBwOM6tjCJhL5yD24Gx50J1IeGNZji8AATGc5O34stT_qEsUQ4iJOXXS24oYKLVAxgtIbmXQAyr4_oeefqJyVg1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=PSUk2P7ND-5BdjEjV54oqRT5q2mr-YTJeQXDWzpSQqlnpxLrPhvzDIDtN57LgN-12k0nSZwGLOIHfDh9RGSONXPhXElGtUcVWOVWVOTgcGN4aupF6CDdAJP54kkl-4_FkaxM0tyPm3jyeRFfv47Dt6ZG-yAvQSp9l3hno5PWqppO9pvFv4tvLaaVomu6FGOo0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=HMrgiLqJrJ57eJ10BdjcFEvCxZ5hRduh2OWjmUF6xjqQ9Pdcb11GY-U776C4QwwvUguCrxwdKfy5N7HlQ6lS2uWeOnlS9juw9SNoIy3-5QtcTnGSvIgfuWR8CXMQ4J3eWWZXl8OIp0hN3-mA2dHW5MGgEoXx6TCuY0bptP8LHvlAvpMj8J_NjlVrlo4BeynE0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=SXBBk0_1X3JwuAvsgA9WPoAEbfIB5HIjv-gcORet-E3DF9HX3o7djlVNT7jl3I1n7yl_xAI5tnChX0OkvCPZAd3iIVjH9A5ZXRjbSwd7FreRYEufCC6WipHH1nIuS-1Q56J4r2w9aHrGpjxQsjsDH6lC7-OTm0Db9Vrpe7y3WNM1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=gKmFc4AH2CPuLdoBUfsZBL-m5SbdbNtu27cqa8b-kEAWqlS98TwmGM_7QuqsAUs0xhuos4pLzjB_0bo1dklVostovS14Be5tXyr6m2JPDUXvHLiHddTpijYh3lKk7qvF06_IuXPfbCqS0vgl11JP7oPOp0J9zSM7Pe43kf1ahPE1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=JNDe6Y-pjms81iyTcJJjyOI-rqnsuqIQZLzZgXdfi-2tTTh0SXHTHG6o5bu6eB8NDgi-3_IG_UU4MppICm3-u5BD_7FQ5B7w9AFnZUH8sUlLnfbrahX5QKM25FZsF2ljAj31lrMjmaGEBfvYB8DsrmbaGajJWWzqT_AjzTh5QMc1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=jOPp-I2Q14sq1S0gr6iqL57gCKcVDCXEc5csb9LhtYkFkscab-Zr831rO8ZM2fsM5Lg2vCXyKx6uFXcmCF9mZqhZkLdOoeKh7yoVY6P6--gnH0MM6FsgMaXOqh5zJAFeQKEe4gs7ihVbWq7TUXIG673grrfQ5dKiX76ciY9bQZkBQ5yPgJE7sNXVcZrmAIRH0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=3oeuZ3ejKZqYw6vZNYiaSd--8hwGYvtelfryTq9fgB6cWxkW_zg4R-LU2JzIzEsvdOfV3yijjnC82L5Lsogo7hGmNEjJVOhlntp1ouCn76b4DGu4rmbHjmUOjseuqHlcJlf3R4vM33d9ZLYpkdwGBGy4yD3nCTSFm4Kv-r7hMJ01&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=KlTARh4fjOleA9e9OrwkYE8DpShXSrjYGwH14Cr7Z-OEynAbKqcv9Gz4y3bg7s6zO06SkkAecPKIyQUl5I1XImntTJ0YbW05uEtNJcGi7BSCuGMv6UQoyLqdqchcw_UXi-0KZ_ZUAEXL0qGDr1zyuRqV8WjjzTjXT7lh9qfZano1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=hBGWp5I3UbAj-z997Et47wCrnIbvN7sKlfwItNZhP_lr427gfxuyQouhYpj_uXBdmttzH8-hTWue7f-uNH2cViELb-zeA9eMncKNxOXGu8CHCcoEnyTauYpgtOAA0sioEhAFS93YKeag6QQ6ur2uvVd5HOzFGlR7wG4PlDz7jeck7vK1lQoC2GYzIcJ2UP1b0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=MDGrUjWNjgvZnIbQx7NmpSL1toVPcDy3N5xyNVx7klFLT6SHJaZgjoafF7_29sdNtNyiwlgpDqosiuME-0CQ_yXnngMz1HYINbAdTHkcxQ4JfjyjyPnCRxl4NcEzXD1PF5s3jATKPhzs4CwI3-G3KMIlzShNh1qJ7NSwtj2srMc1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=V6mZQQTGKZQMb46EdEgCg-t2eLgpQvzk4QWZ0trNy9N_6QAUJgZPxed6u7dJfxfKSPUFK-NeBOHGcMBKSOGhC15EBl1n2DX8Vi0VhsBJQ7vC3uqSND2bBMBMfwhMldt8hEZ_nqhBAUnf0OnoA6iKag2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=NHsdGel4gvpFHbzd8qTnrJn96BTKAIWMagVUntCiqCXVRpZ3aQyDILmlV4kRasoNYnoVFngjtX0hSACxIeCqF7i8ADNQAj17lV5ugmi34PRfezOiDT0T3fhaKmvFpQKQqRpy-P3ct-W4_QlgzlCzNCd9Z2-6ft-ddtbN9Hyy5gw1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=D9DQoGScgsD5oDKrVK2-eHzn2KiHdPEBGHUcc06vaYFUesH1koKoNUGVfsMzDpQCq-NJRA8eZeY5mUK6KtpY_-20be_G2qU6xTejRThmELjOSob2S9_1gMkdJvRdo8Ieorr1rWWeX6HeIAVeaEDPXCd-S9o1w69qS9lYoUTfEv81&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=5Oj4Dxg7jYEiTdBSQMX8c_NQNxMOcXSrtxYkhxlZ8LsI95wi5mn2s8JGvDBaxE9NYiFJfxXMD1HYUFADHym_uRds-tqtdZYkWCK4J0Ict6T_AZvG_SR9CsK5OEAJGZv9aVirnAq7D393sLWVOJZSJSuSe-ElOz4HnYdXbgymgek1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=k9gs0vaXi_h5GAmzfYBVqzuxPF_pPprbToGNWhYXsmnLXnNOupdNCE7kq_gPVGINk020cisyG9-wuegqrDrQ6jVTBVViFPzWlqqjOuGdVuSj2Jbxydy_zTLQk41AwaaMOIY5aKkUf2PhiVkpmqw0SA2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=M1iMRm-jkbsVSbBYnM-LyVcbFtMPZ7fPAc06viy4ZVzPj-OfetNYh3uzHqnqT4vhL5T-cNlUqPNXpdXKnTXkW2ujMqzJXM96jdq1z5a1rSzumVHC5QM6t_uqxs00CyhfYzVNQarD6xg2q-mEV2wpDA2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=xm1lmZUmtfynnIxRw-qmAsdKNUHChMJpvE7MfDMWNWxOTZA_8gtkXoQp10BO3_lBJYvkpTVJk6fSNomNI2O78K5ez_q6nlGR8J_Rf38f3a4RRcll7M2zbS-e6g9BeVkOKw6P_BeLomHve9M4dTW1nw2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Eee0BJryMgLXL0EDA4bBYFqWDjpJ5LJLPgOr8MI7V34KVXaoymCXJRZRQ47cD0OblbL8b3-QwkCrVaFpU3rb2auiti5LV4jsmEUbyKdB6_20rjn86Go7NTdv68R-JyyIoBW7oP0gXq0_FmqDb15Ghw2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=bqd5mPPzqwhymdVYF8TvM_V0rljW4hrqiqbYHHVCYB5VkWhiOJQQJkQuJvDBUQiC5DT6ZRFphgoFtUQihgnuR1btfr0fdbr_EiiYI9MzgWFZD9jt2wgRImmH60mknj63UHsARy6bx6zjDL8JSMOA8Rdt7z5cTFYHr1dICSYCSy01&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=u5WuH0qddHs7UySGxxd0SKqws48qLfadxyUwUfmdmzgpspl8C4O9hZnKHua1Xq_ngjE_A_sI10hWT0OkaWgW-QIN8If_-iqe_EBU5Ym2-bbcMBzr-Zauv7Yt1n9wghukH7zY2sr0Biy9wWGgnUTwCDLiKi0g6Q1fYAl2E_3uXKABBh4MGFYfdz7TUbIwA9VB0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=QWM0oSkeX4e-PZhyzkyU3sDlxXDTiorSItd9UztayzxboWiURXEK7IQZdQBTyPDg7KiiKvKzs9RUsb0H6f2ymxKfwEhOnJrcoDAtzTY-cDOXBccMqC8KctUlqz1VqOEMvSPwlgTLrPdF75mz2zeBej0AKnj9Ig1KdtTXy4Yn8Qs1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=KitSPeNWH1Oa0Cb_MqdycpJvpE3yxZM8ytGOw9Y5YNU5SDT6NRUk1Rm4qfOsjoHx9TB9qjsY3IFudSCZVaaKKU3_T8BlT8tMpLKRKy3MCW5OOKJzBHwitMBt_WHfQ8nZE2xmUwK_CL8TSzqJNDpQgQ2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=A6tA9-WLMhMpKMCnJLk0K80zE7AxJ2492h8vld_z3HR1cjMKaksWA8LTfI9mGGFsANtbJVU-POpO6jnwPQKLZH9kAkqfjhIUCq5O_F6yAqQJZ3G44WEqQ8Ap3nU6jLNf0VrGgTRzzx2qPEGlXatZIQ2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=NST6CY8DvKV_Trb8DK-tYcVM9Dhx7rxCieLerBqaT0-j_94LsOqWAzu6Ktm2FkE_HbeEloYR1-86dHHy5i0-_4q1lBcxy3rTJbSyDcgsClk_SRHmRdDNF6RHZQ0-_bCCHunS5RnJQsKt7DjemJC26A2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=a_OzRZxvdZ0yQgPvV1hPtGAqd3uxD-VaPcBEd1HTtD_ZjAh1SLuVH_uVS6ByVu7AXGUu4psS3GLw-Gxj0JtiK09OlV3Y4z3xMC8R_bJw4FfULSAM-cioCtTINvKJ_dSQ2-ir0JzL-7JwV1nWOe-vyA2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=TQj4d3nFnPqymr0agmSD1PwEtRloJ-wq1PBNH5aw8wn5AdGgjPv1XRd73BcG51Yi4yKisHBBswFzMnbsPs2pvTduEtMp8tf06l1X-BOPTmyAA3esHejYZFclhnpvXN-yCdESUljYtQL8HAXW3RsbYA2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=XI73eb0HcqmiFxTZuyZt7A_miXzM_0QCZKkDMbU3HHvqR-Zcj7Um94SQ01f33sewQaQ7QFPn3C1KE6JSnq3gbBmRgYkEmkk0ZnrsPF3HpanITCF9XIrs7CSZiiaBTEZIl64X8CsbDZsu-xJMpIIDUlF0UGCed1pCnfHi03xBGyVdOT4XK00fx_Sd-EEHfB6G0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=ucfGQ9CNu5ynwHnGjy7pl_BfiNk87ljXXgLVw-g5om3hdrGQX4k9E86a_DaPuMZByUOlDiCb6ArYePKGPH1k9ZZX6-jiP8Ie2W9LIgftBvOcbkoJmljBhYB39oIRIV5ygVLsn4ARbb5XLcUdU0PSpDsXAsyThrCwhpPIBk5281k1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=j3VkHyQ1IESgka7EHxIgEuKSWlOwusBKVT7WXfI3A-5wDCj1fdzZ2EXRsxfqgMc5DsT6utQZGZao5OVWDftZ5o56KDio_GM-WWcXhz1LzxGoF98J3_WwIcYliTeZkZdKZgowX9xMfv20D5q9ksTpMfdvJ9Lm2tVN3i-4zhuheIQ1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Ah9ROQqgscuHpBjxrF1jXXk5smBsEIbxsmzM3yantXoW2rVeCCV_IIotZKHNH8Cw1bQWNvg0KiFs27MUWH0JIGkh2d8laXD98w-_uVIA78QTDt2QB3JZiHGwgPo8bvSh8A_aIMPgmOaUspGj_w3tkQ2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=_nEFPZ_cDF5oGTccVDLVCxxAwKr3S5dc7B343oEMbiw3qkUc_lwmrcCs-pBtJYiYlzTUkr0i5TTGauQQ6pHLTQOckWWG_FSj51vXPc5SOkZjG2Kl_Zy4xbxWUG7HXCE1uvGvmDqD1hi6ttVi_17J6AzFOGd96d0_IAsdtx8fT3I1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=msFKYLD3EvTuHE4Q5y7_nl7BA0yifgX2rHNg69IRc_5dqaQRhgDGBGYWqg6_5HfOejMMzj0LIbah57gf4lJP-nm0DRNYQUVoftCTqVqwgO3JCRlawP486Acw333EtZVAH4X9-QxT7v5KKjZDOL8Mnaob8xT_YJ1qvC36igMvYZo1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=RXVJjx-qA5nb5qmO4SgHDYd1K3lXJWPYY0KoHvxy--AyaHAs2p1mDVjdkW_Pt8UNfK6BDzCP4Expn8TILZ6PJkQA61nIyIIc2fG6UaH0SKXfkQ0Ru63wSLyV18JrWnTVBVf0NO8FlHvFu_OVdPy4T7ON3OYhJm-jZAL1mKQarVs1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=kuUy8AcQvMjf-tYfRjQutVhsdbUGHEufcEYYfLVgpMK51HUeV46biFb3qKv-uwk8nXl2z-AHNHK4FAIl39QqbLCOooWwjuoJ6n6tA0tt1Nbdyo0NC87CqL_PUNWlgwIRaLbrWEyk8Oa3i9aKr6nGuJBGK1eTyibnYkQC4-AmxQw1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=BVQzQK0IvqXH71OXXSoiVIALzUnouo899BXjJUKwqqLgxlMA_octksb8CbFEUzi9x--yWIwrOljbRqYuyE-mhFChLzxOdpk7IGsTKDYumY4Khagxbp-LPH6nBa1DDPqs1XnI0qziimx9iUOVgJ97OA2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=KEIDttfweqmpDt61aAePZXnO5vazondf2VqT_G9h7J5TVQ7LnMO_943Y6s5lNwEVhgDU_sxpcd5vPqic4uhka49tOfSvzzeN43TY7dL0Rz7RhZt2sYv0O42ncwnQB3X9GmCaWjg13LtHw2ii89vUjajPKQTl8bK59iCLWpv_5tM1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=0ZbUXIsgeKEuYyPkGj5Ph5T9UUB2Dv6diR-bGUHEhbH1GktkwMkNhrMWEsK9vBnRohPUSDVzWy01cw0H4o4XokwKHHhi1WOXojS-pdgg9m0EGu4G90LH6GbEcy1O6eGtxHzVOF9_xsSLwPp2QHrj7uaGiPyMzbqDay316L3Tsn01&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=nC9CaqZyTDCUiscd8rF5H-jAr2WeuwTZSdSTwdmUABSVFMaSfC751Fh-SusrpR7B8f6yHbrJvGuqDrxVrDNEnZOWuTpEoNU15E1JfdJIdwLWA9qGW4F6EfmqmHVHHz7TqecAYBEkNc-UZMePhvBLymMyPVPiCvVf8Bcp7kDjGbc1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=234OGRu4J9CN-3jGFn7IF82UPmqS2z1Chd8xTbRI7v5Mfu_5hE81221m3bpHSIqXZTyzoVVTXslZ4_K0kjyjtrniLJ78jSqD8mEz59Yf-bLxd1766ZKUtUsfukAIlrpRW13q_-Nrg0Qa7zvw3XGwkVXIotO8UdNB1RlP53csUwc1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=17utQuIKdBt7_28kPho-JxQCXx1o03zzr-1PH48OACO3BMsq9tywzG7wbqRIg9g0HLdKa3IZWj6ronsqu-ApGmLJb5wK_pqz_qCvkNLg1baVZjkezSkT-ZkJLprvQLU_1j396f9P1er8MDPXI_po7g2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=UegHJORQCrqkKcTHgpbTMjV_afyGlM_sYTJr5YxF3Rw1YmXwf2lmTmEDCBWMDVN3hWTEmeweuBAsrgadcbIBzH5Q_x9tpDBtPJx5mtRRhqDp3TB-YAZnJO3wYrt9Xjzt5BTbWGJEdoqKkvrcW2pb8CPGauFnJmUXb5YZiuslYdE1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=138p65_1r7U7vy6w1BKuA0cZafsOQWW003Oj2X5BkfcKQrYsOPSRC0BwZR570DfwgTTprSLniN7hS2Fyz7rGTj2LSsl1QULTdPeh5So0BwkOqxF47cAFS-m0uv1kREGDw8VTXP1ReKCmwZi3cmVnmm4T0MJudcVtqFNbu6DzJ6Y1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=daT3igBphvkvh3euBNWLC-ByF6z2s7mxJP0-FkwjtJ5PP2XUdP9TWSpbELqLMer4nl1WFDDHFlbh2EV6JIDNZjbCV7ayo2EakVFW3jKcOcsG6mDTsY4VAtoGO8lOqeRcedWeEKqtAJWAvb4RDIdd3g2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=IkWPrb6R-WSLW5L7BBNCkE42DMRE_laqKUK85Wj2owf1ULG-SJhR-7I4wT_v5EkCxS6dqGToAentlr9sviwlUhGBliv3ppE19RAPzbD7VOjp2ELVETe1O7H2C5iQqSAiqz_H5j8RCPwZQMfgKvDqog2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=hmIzile5EBeVZ4iFDRWCHQOcYU5WgbJdhyxT6fcstVPELn4x8Galxu36E9Nr4p1ohxwYRAdJZ8sJvw2CmoRUMpygiH9I45zGtQaDH78G3rz5xhFIaFMWLphq2Uphb7i9-RfURYeroRr6xSb28K1z4Q2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=LjyfJhFCjLx-jd-jvDd1a77P3xxGXetCrGtnw3ZkTEA6YScfDPpBg572odNT7edMp0S5S24BaHjcu8srA3BGRKt2R_k-UOGd7evTBGyGV49JyyBe53Hr93kmMVzxBLyfbiKFi6AMZwdbUrmjVi9txw2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Lat2p_9KAD2wg2WjvE5XFeU55yYy2qH70-mLjjnWRQIYC8TdWMMh9iGI1o-98uOfEP_loEiMwQHD8Wz20po53w2K6SZvy8PGuOlUgnjY0G7P2zWj-NV9F_HVRFFXEDghv2sv7G5FwtFt09a8FapEBg2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=7sJ_3lQGBHZyd88lxeNtb8-0i-ExezsGW7ra9OS1fPenSBc6UJYs-Sr_Sef9Lhkv3Cb3DRNRBc4AQvvqldwDrlSpWDLFBgO1jEJ0bRaNGuxz7OUD8rUMKCR1wJ2vwU1RsCOHfCpfXGHbKk8GyRpi9A2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=bfpxxvHybNbfd0ybdadeg_nSEqxO1AuFXJUZFhkrWad-HxEnmhTMFElGhgWCnwOjYBbUHGCU7XMOwESg8gh1CRRyrA2m4U11kxzb4vQ6bTRAMjZieSLf_zTIX6XWMBhPdg5EA2g_59R5GnGDpHMcmw2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=6-wDHoykEo-O6Jrptl9tnKtLfXNYIh29jIHSYONXV5FqYldwvZPnbXc8l4iz6FOPKC7LzAdQ09pLvd8Xg1kwpURBGZqjxv99sYVXWPVfRF-xjug729UcfZWBill4CHtcp7OJmf5Hw1h5xPNAxpR3nA2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=nbAv7KFx33KeRwP2wc_MFwVDD2XY8GE1bApv42lyRCvlk9ziLicRJDL_83DAsQss_wdeK1gyAQZ-2Y4e5_g1ZPdPilL36sVvhvxP6OiBAhn_RRTF34LUukCV-l_waTD83mOkW1Iu8UeLPNxgW44kqbpZcC6SxkH3HKXU2pniUZE1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=SDWAfQfAhIEajbq-IdKVgYBKjSZ2P09E-D_leg4vFtMvQanpd_gh9wcsfLY7S07qC-vR4DLWqnEoeB6S4Fmsjk-j6T6Emmsa-uY_ez-UEfrP2OFx5lAmCcKLlZYL8X88YbmwWvlvVNn4RWuo8eM-9Exhk42YXKrTVmrh3gWB5Ng1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=juqvNFqpDNA-zhabkqEDbOhZtTrTlq1f87VHQ1v45ycMx2M7qnFt1xVrSOFDOre7RzLP66ep3doBmoxjg3E68nOqEw3l7b1rH_QXOMA1RL5MLtQRSnrlufwNwciX2ZBZyrVWRH3hPtEysYRfE3KTI6NvfDedDdTIg15ZMCh_XZF1Yao00vrKtQa1D6oQpqMY0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=kTn7BktNxm1b0hzhTBYxbfTa1DZh7g1R_GSNetQgHjYopruMkGvUFECVjc0yO2ZcKsJGXyroMPum4nHWMTR-IX7yHaju1-Wqjal2WsoypS7rUQ9L3n1oQKx9QId5a70omXUkou--g9Ubp9JORVatX2tFkLX8qNvUhxrl8Yoo5jw1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=A2BH5BPkpu1WSJi8yLqxoUWsKLekid8yKip-wjP0iX9Tz_uGQyy1QOS8q4_uN2_6ErrAyIC8j0fk8BjYJaZrN_4HKlQlknDQUV_7jRkW9sT3-8FhLuDzTBwpN84hAH_Z0cyxvhc93xmNuOYlvfljiGsRuToWletILFueCHvSZhk1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=I21FzrxTGvhTQ6rHeJD0mTUUeWZOewomVwauTFDLxRnLtp-Wv46U4eudKVIkANO2YQMnGK4_f0oK0QUCglofKi30R-bCj3Fa9-E2VVrQMnkWphgH81KYQfwRN4rjmSMkb7mhrw8yaqL9kXxeFooI8tlHWuiU08YlA97PMF9aLug1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=jW2IbPTIvEtwFooEMtuxRdFmeYFgyq2DF0O3cQz4ADUWPn9dk83ik9jOe6oXfOCyPdLV-Np26vRtVBWmkWWqWd7p4sfY7svfYnFvvZS6PL3oqVXuunKB8ONCq-nVtJuP2Rst9hNEfZc55mGNfHoma9LyqA85WJwOfbW5xk4aXumQ-WYL45sdTV6kMzFBu3_60&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=8fZ0y2ukOHWSsGQFJ_oxlfBYTYM_RvOGE6xrZljwznYXuPOW_b0NdbrI8sy2Zfvm-n2piOx7J0T1oS9fKz_N6K_-PjUBve9lQM7r4i8hwgdw0Y2DWE5Vnw0SC6IiaHkjwLJPCdHWXdQ2MpFmnfSltp0AfQqSbxy7S4yDAksHvaw1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=QKNIpitM3_Cpflame8lkK8LdR0fqt75EN1tzYFaotTPBrYwHnsZO32DKaxkgF__ojoiRwFveowCDLYLH5DGo8nz4-_nwSfDajIZnGRq2APtxrzKJJ5e_m4D38oKSMMYT8I_zSvRzifqe-1kMIbmciRkq8KfaJnTj7ijvt8glbBI1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=UbjCNOdtmnYDLvDS4tHfmOw2UwJ0uZ57Tmr2e5dnNo8kT1rxM0U4qCiE_w4yNj0nEghyNTk3nJRJ9wY_XuBH6wfwebhYlHQxhT5TOcP432FVux7NfGuJRlgF4N3jad53uKzrrHYdEH8viL6ys5_XH2NLBDrFlOFttBW8FFus3JtTj2L17Al4QFGklpmPBI6P0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=xDQq9vFeEYQa_js5PTRAlzvlkEt4aqpdN_wNLpi1rHwNrSQNbjgQI0LlNG2wVT2aVJ5C2YElUWlIwLj0RYp3jndWwG8vZxVQyeDre20pEwvH8NekxGpRyuSYnTdWqWZ7eu_WKXrZ62atJLXO55nm8TGZ9Dsqm54YJJFBZBnxVNs1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=7_dckj-9I-K7eZKXf54TEWeY8sAByocysVrPfhfSDeFFJjfc3Bb3sQd_Az_d1uQORdVi3arqbJEsJfFf0K3GZLKZhGtoO__kkQmYxTryYawjtVrQn_H-7y-IrhckA2fYo_hsz1Jkv_RVFvRXnkgpGiI2VWKWEgPTujeSG2rjDro1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=LjR8Ug6mRTYvGvb4MK7rxqneZQ7p5uTA3z2uoUv5oC7Ag3XY1OKxnRW3OZgi1rIQp-ze_78sWXRDWM5jfLPTCK29DDa10a4Uh9ukkVjN38XuFmors1N7OeYgG8utumlXm5TA2dtn3K5YPHHUmxipNoia-lWymL8GzH6lXKUjflM1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=8TkFyECapvLAxOPQYx5jHOlCI0SD7z0OQe8gtZsxioMbOHw6OpZqd7fL9vWWULCFNfL0ZfUZkBpYft29DQpp3TlM2s7p6lEQBFajpVNazvZCByfpi2vj9N0eO3EgKvM4IF_VSP1b3OmO72h9w6LIIgaGuk8pYrjX18i0Xo0miKg1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=sXLvBo9M2Du_ot_iEyJqzMHW74L0p7-fLFJasUKrtclOL6MVAawj9SsEyAh8-9yWW1JnzsWQXXtjfttfkvOu108x7pRcs5vnHjMbS1_oHds00QkQRUjWu5_uE-8_REPOeQKKGpVVKRYt8eaWjSPeFTiqifwVuE7U_i42pRTfvec1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=KFZTqQT___ix1OKe0OlKtA4GwfFnRzb2SfwU4bplOck63_9ofAcXQV7XJWt0zddQjv-QY6a3Cg-p14O-RyG1GoD1UeI2ApoP0-m-vumreAffOx1ObeKJc6opz3dnNSJPKmuNs0F_qUkEXyr8Xo1KbJvFl5uXaKANc6_4WuRA_ok1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Xf6epexqgafntZUzaJk_ftwjK9vRmFvQwMAnOa92NDv6G3o8PWvn2vZK6S-uryI_R0SRggYceR2_d90yhQ6op-B-MNUHEomYDpmEBGmBbFouJ2kbUp9T7gJEqHbfMJwC4piQS3Kdm_DklLyoT0Ki5Feaai3yZahdi4iE3al9_nw1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=H78JwZGEJO3esTRlVRCgxcoOK2a_0TfX4dx-lWYF3pFjfv6jl5XxzMHk9BgkWgZbqnRh3f8421ow3cVGEL3IIIiNXJ_yE6Ivr4BEjRAXtNUabSZUXJSWO3i1fFJ1IkO_CDcdc89OmG9elZdwbO3waru8yYNHM5hla2SzBIokCvk1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=iJ-21gadcO4xIxs8WAC36_8VWAkQxGiWiFcOJHxPPllFbp7uKGQ9PEeKqsvCiE7lpQV4En7wM63CiG4bkgYTyCEkmqhkH2aUnh8WpGSRSfC5gK_oWlvs0JLhEur4rkXDwtLY6bWNO08AHuEliJ2Ayp3V5mGLydfNJnKnlPiZF3M1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=oM2GC6-AtyfNmVunycJWRapHJHz2e8oWEh-YjDR-gjdI6soNJQVokF2U7QuMqvG_KXPekjLVN8kqD1iMO1GTD1S1GH70F7AEIkys1EaiJGlDeoa8qJ3Mc3yRvEv0UHv6ucrJIpM3ziKafi0d7xuO1g2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=VmTh95v8ekeHeZLSsqibBIzXJ5YLi55-pcvSU-lzniGkoHQoVdeDiFvDznA93rURylyG24yGkQWbuZvHX55hNPVgV3ceFniwRCQAGVpMSaWeS9vo86UPfIq7sEQbRkqhOLTJHq9oAFS3IfsiBwbFkkqh6mMQnA36AFEVa9NTXi41&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=J6eiXLjpAkg-qZpFGIK33ZYSuLKESht0R6sZ_UR8qg7LdFbahLCju5IlAKnuFW1J2xPuoT0vH6BbZkGoDIS7mL3VQ_fINSs82uNiQ8Z3aW1Jwsc2un48uH0AjbulRB3hARieH92oX2oB2aX61qwZlT1HXGCSlSCrUYBuaTonU201&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=-bYPCpKGoDKeKTdNbkGqoF9iq26FnZByw6r7t_gHCk3GIRdaolqzkoJPEdxYYLQ5AIl7dbzeR_-aCLnmDQq69kKUHH6O-bO5uM8zfvRmPtjzX6PFOVBmWV0K_Lnp1tkiFxmjSVA6IkQlcA9nTZP_1bg74vzfX69qGjNvVXhyUH32_dDKk7c5aGhYuIefNUth0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=YsjnhGiwUaoQtmNfaSuMO5Lq3Z711Yg_iw6nis5tesd8fRoPAZd4q5gMzpoOm7ACr6rZdtOZgDL5B8bVl0-aYKiKNm7nkIpxUOWYqvgIhQlFIy5yrZ0fVkTpMv-7OqLINTUCyOOzf8DGj1R21P0ftYsf1HHYo1TpQ1Wx6_eUC_81&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=_8HAh-AVG4YJfplg3rzrFHij3OZaSL-iIFoVeunbpn9HNJYMT4VP_NMCroqWoLOCpaDQx_QY0Mt6mlQk7flcFqx03zYwdXZlDcjLzuBZpX0Q-VannoEth7DyD99GKPjbg3So5Vhz39xzanDqerbjJgymb7yfleOjtus6BCLaxl-qUeqfpJDGU5CrrPLxOwjl0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=G8JRUStsB9h3bDA7GkpcxBR-zFz2j3jOQVscPqn4L7XXUkebBV9hvIr4eNddwuCvceMSIofl1HBVm5Gbq_zKB_ZTpmF7gJcB0Ux0g9fefrqg0AfXtQgwFbokIGf3yf54B8I9C75tzkcB6ildA59sEd1oXtVY-V4iab1tYXvjkHNIAniafNnPMsLG7PIfOpFW0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=L-3AtLqjj9x1DWRxzT5HyGvvTriFyjxFFHlLpxTNybmXzNYonV0kxyrN6X6LU5TLsjLCICuPoAfiCevnE7cS89V-jq0H-MmtSO3N_u-gxnxUFkmtahmsnCuNllYcJJl3eFMEDEKH4THyrwg9RI_-xM6mI1rPILFxOe7-fqplK7E1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=1arG_rLiGvXgh01YkUvHs75lS95V_TG6BTTuyIVVfTfPnEh4gFqHs7TTYkfSpt8iqMf7nb9GuQHKmeHosBcUaNvNg3v8PtYE6HjtP7i5ckGn7AAYh-txmKVJws-na0U85z-QT0E5g8iWihPpDlxv8fZRX5s9d_Gr0zlP-QbhwS41&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=uwCPeGEL8zQm0yg6fMQKM-1BicvK57e-3SANzzozRD74_RBf6y9x5TuvTW_nHL53GAiGYgXca9n_wl_VPwByxhDUnO1cRN2hAbbs4f-fkhQR0LPGQ-8Mzb6xj5Oo03_LXT01P-O3OGUf_1ffc18vtaZA434kZL_9HqPQDAEE6rw1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=PwJt1T8NjLrxwN4ojHVibBy3cC9y_OsDDqVV16I7KgovuJ5nz2iECoN0by96EBdzM-bUQA5lUPEQUeZxzqY5fRpmUUiudUNDHtQiyVoeSYahXA3_DtjPiF48J_Zl1fVQEAQ-o5C8Gay7M3qApEXH8wSH77_maaJsrL8m9-gG2EU1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=EpV8qKSJ5u0wq8fjHnlxt3Py-HJP9tPHU0XkWkqbFvnFqoRjMQ6iQWmHBEHmJy8LO_cb4r8t9MvzQEvWHm5K0s3XsiQWkuVEwlZSW3Ime3HbTaxEJzF5aQkMjPSB4QS3GxOyp4JuKPbS3EOWjNzlKoxAHcJx9vmszcVMJSENblc1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=5io-vSA46uANWtrQtvpLqVj8nOPcOQyuP40zKjlJeyrTpRSug-BvIxPx7uJUkzhpZ0mDqmM-KLeLVJRz-vn55lU4LySPLspyJWWMsli2uvOCv7dgFLClNuzWwBuxwoi7KWx_-l63WJTE7fOqW4Pcg8qn2uNSlU6aP-Dg3CFuN-A1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=QE-y6rzgtGTbixeYqbvqQsVmR0HgE3DbBxiWtRu7LRK1RZsNQbypTESozXz0wf0fSntt9_thE5ESo0veei4p3QPmiRY94ghRiI1-PDnnLXd6NpfUH2ic1JBgqYtJuLp_Ra-Ki2LoDlt3kLJ2IzkREDWZr4vAEQ123tImBjCyo2Q1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=ufTd_216U7qudsWGXUsvNnZQQyj8X6JNHGNJcI2YTL-PKjSNN-EE9jkrmY39tf-_20wj9mBPPaPRkADI2MZJLDijYtRDXdUEGE8Z2Fd55UCQFArC3kLrdDnK1BSI6db4UGLuw1CLa-NL6X3zr3GVy9miHQhBvxer3Y61H-FkJlg1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Bsz0LbrsQx2WvQZkTy8NiLqrx3UIytHMShswg2_Jo4Ywga5NVdXRbWEp5stwmlb9WtHnJ1-8EqT-lMeaW_vBVDVU1z3DrqDWRohWcps21_-z5S7FPF1C5xAVYwUw-6HCquMPo4C2JZUBkmdP_5fkfS14IS15LSf1NP4o5oiRo0Y1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=6iMILa8m1Tx6FOdr2EGqaNIMOFI29Whzc8IGdRGKFpsOvfXTx9IpQR_hZCMNPuLhMpn6E027YoRUWGSKqFadjb0iK1uVto0_4ejn--iCZcYKXQ9anx64jANI576oDUG77d7OXoRJbAeQX4WAXxQYnxli4WwCdAaDBEb3pbLzszk1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=_eW-Lz7vf6UpCtgk5_vppVLSM701zIO1P-Kks9b8-orG124m3nOe5KViGF4jdi0NUvkJ4FlBz9btdjC68b83LfMh4_73aau5tzZcnp3WIHQtHf0BHkhYL7xoWZCX59mkFRu198c_Uif1EXHbxRhLZAcSg2LAlaxxT3lUOX0Zp941&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=IS2YKCk8FMt5ZyXmmSqVEQgI7ts203Xm0BdQZySoUD9GpRM6C6uyJyghvi0LaddMeRaM8KWEicx91TURa0BPii5dum7Lp45UCQ4kzvOYnjKwIw7KBLlfxYRMJB2gsRZt-5fZqkjZyZ0dj7wztk4FUp4_UhXZTB9F6JVFnCLBrAw1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=AU0w3ZvLpPdU3L5K9phjQ4YQLciv8DkRDrrgLZDzxW6QNlfWa_EOZgCizKs-WVP_GHnuUBCqxdxTVMxr8lrPyq0Gw-AKQ1OydRpz5ayF6UMpd5vTfrhY08hZeM9dvcxR9fNTwujdIT_aHItuQnJ6hYJaCu3-rU08WQi56wNRjOQ1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=gDBcKE1QGbUwtfTg7IfSi0CMk-ihcQrk3193paB5qP40zwxUWMLSW_AMmyLutF4Cm9oP1HYJO1bFQpMTEe-q_e_n5D7VHbKjJNtT-7g0s9e0I24D8ZA634KQSg849HudynFravo_DlMF9wgxNkQ0Gfa6Xt0BbUfS_T-IUiGEXCo1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=srRqSbZW-wdPHGyJn_l4p6zIDZcOn-Np5M1VkXrV9pBlnODHfQ0pcv1k97yKlLOzWQbWmWFLREtkI-BTVE9QgPlmRTR7a-brbARoyJdwoWk3UI3EonWluGepCikXD-uhyw9v448s-jaOmijlJ2TuBd9zVA9GLlwwdJW2-ScHkSs1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=1a4wEm9887SEuY1BBH8hZ5rSl0xDPuGp9r3s4s3BcAvpTAQvwh9iOw8N7HvKHV6dmNXPwHGlY6gxBDKWrW8iF0ahR4PuWOnmRwxgveaSlzcJuhfuWFV5IkoiNkwf1-agUrDGDBHcUNLipMWlRk0egcDq2nxusyMz2t9sI6L63NE1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=WA7dSc4uoRAsBtnIwHb4uMvNJiz3Q5ArYrbEWuIbj41tun6wAXfyuPNcHi1kWKJzGIZMH-8YBcAMTnxAeTLxIpEfUUSrb7f2Ohvaw-FoIpQdINQdOhOVKvN3oshnDtUz-HFuCEt3rkFeg7g1lXDsW8_27HgRr1jQfLW62c5OudE1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=oBZgH0atc14f5MW4Mo8Wl3DC6OIjy0MHJ4RP23qObnCN9yKl4hyo3Viyu44ts7z1Tzegi5EwfU8ncKeSHtTb3hlpHSnWuGcDStWroP9XSS-13vf51zXxoMKHr8jzQnfqaMTBZOF66wr31me2uZtNUWT6GablU50eTZg1je85NMg1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=-q2XIfI9YSx_Iw5TXlpgvEh6k6qy2k7VyuB_h6heAZFQYWI8HK_2EBZdPXZNZXBwwfna_-s-AMEYvSrXU1Gve5ybiVHLlo4cRolZbHGOPgEOtLp7WZMEYwKu7USEPcB0U8tfLI4JEWvm2fZXm-R-uEre425M_AjdOA5rY92k8hE1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=TXWu65wl6H9cZUr1uX8jdNVM4ErRiYMiywZcNyfH6qEN7aGcx0GiNiCoy5Mmkzo70fZX1gsk61iGR8ZngAsqu6OhG7kz-19tuBiuFm5O9evGaZ-Ffk_Z8VyGddHWh5SRzvB95oD3ezzCviuH96rOMPXqECx3_uaBKRUCwxVC1DiTmSNwQUEZWJcKz69EppV10&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=13X0735N3iOhcKaD0XGHdXdQEQ6oKmFxGikVlZqXHKKZeYN8Xg1TfYR18gcdeG3lNJkizBBpKi1DTAycTGMHrG1XQDYis3a_mwBBJrlTsgnyxLujQ29oUWqyMlyROQsQxsJFA3Dvs4-vA4Bgdcd1tGotvTI1oKu4ExcTWO0KtVY1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=CYP8-RVm7GO3UzW7a2Zwh9jE6S3jShQDvLx5y7W4otGSqYgdtkHngjVQJLfp0Pe4X_vpxOwjGzIs8YB1cfiC4ezl7mS8vxKaZSAlph-C4cdbpjJGAPRhpPx9NEcLHiWGLHBw3ZM4c7Tge7tndYErMfRdez5VUFHSUrU0jZjp8CY1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=caROf5HiwcvkZBen74FG97orj9PAD58BTHUbn12QuTEyIswEJWBRLlt-DtSDpUtbL_mmma6Mqgfedphtm3oj98rQZZ3f89I45qSEAiI8VcP87SRDV80oBJ-1KbFDPWwcgQahhK7a0_2ZQGF3K3h8T8bpmxlz_t3KsEn6N_EM8r41&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Na_yhIObUjFG1DnI9xc3nq8i08s13eTmbj_LKA6z-JbukijhTAaHTecLcrV9SXBpicE2rF3cddxm0iGN11WoCX-wV6hr7JN1jC27mNF8tL5U82jlxwGq-G5wcslk5pqy5dTGrMyJ2SBemoNzwwp2JZU2_18sKpuX0CtUsCKZwwY1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=KiVuMLWeeJxW5pbahuhimNUvFTHAq_tflUs8aH2ydzMYV5TNW3Z0pnk1iy_4tOJqdyzwfVkmuULDlI5KN9xrUcFxbgnBm7IuPedfKpqPcfY_TInTgMUobVkUpHGc4Kej6H190cTs2Hq_criWU2NlDlG4d61pAcmtDAhMBeJ7JqU1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=EXkyL1Nam63JmZyuAmkF7TXgETdeLtx8wHULTTTEwu_F3DjTebJdsvpnAiMKpmbyPpf3tW2G_yUaWA0maNwh0KxOsAqflmDz4Uj11k2NXcnYRbeW__PiclUOgBlKvRizsdYYAG5hRxEwNiMyWh9k0ASka57pOohPvv6LFLpIDg41&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=lhJ7_XWONap_q9BW2HJoNWxA6oFor5wIgn27-e-g-O-mdLteNIZPVALv0_jmTDxDQdlvLp0RZZdkDVScOrnKgZ4sgmQOiyMRhZcQn7NAS2uvJu1lMdlT3lxJHMiGILMVlTZkKTGR5J_iGhItDCa3_4XMzfDKxyIANUfdmWB-tOPHibWNFRAy3M3ib4aN87CG0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=fY6qGJvtHKQiLN8zFncFSM_KCONCjLa5wNKMBn0JoklbAhPoub5KVE8b2Jfb5AmwR9MruYsdinOnffZPdKZbN4aekQE0dx099LAYvyX9r2Za_kOAzD64HEkt9XhEv82Eehd0-TE2xibHEpX9sXjQivxsDYyX-yB-278y9zpgQHOBuQ5K39mh-HeqWMODsCoX0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=t-f51sYCrQBbcr3bYEODjEdmgNI9-keXO1kWfMtFbWThKTnfhVhGekj4QyRxYCpkVbhHcYVv2eYs2CwHAh-wHytERAe3DdbJLvEk5ah97YJTpYqAoHbtNxfQ7F4hggOg5v6Gxqn2p7eLag2frBnIub9akGKPbopGlylZba9Repc1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=FNHrUc9cIxF_euKYxJerKvrmK3WJBYJ7aw3hXPKr3nYBHXW5MqLc8LOxg-5bzUl8WvRUCx2-zZOJF6UY7Z4u_FHZA9l5z6WABsUZyrGMuKsoL1Aq_E6lAu90ZdINIxvQfhDJdMcHYWvXFN6mWAZdrpZCfGjDUadXCiq_OiEDkMs1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=yv1LWAty6E7MwYhR6Sw5EOdl-7lEfwo9N3ZtBC7P7zVe3JTR0Th6SEgGUa0opNb4hFCdRZ7hjdd0kGVf57QANdBDs23gsdy2XnvvmO-CqvRgh-nTgyFvaAqTBNM7niz3aH4ktzIRZIfV1aoRGs9nUxeXMQAuANkJxVTQBAlw5SmxdBxqG9aKpXXAgBahRAeV0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=AceLIvgXIaXAgYyFberHv7twgw1tcsKpPVknFnLW42u5YxM3fEb7mB3KEQx8qMY9g7jzInErQRT8BtOBkzaXis7rtsIaRcW2jZbdtXH0y29lIcIWCH15GIm5ZbRZZaWrHcwFh2CjGrDNu-RPtxvxW9yIPAwyhuDU5cQy5Shq2NI1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=nSe7B-fQCF_dU8VtGYgYDSiBO3XpZypaXI-ySqlTo975SZM2fXaJntNkIVRpcO0nZiQD7jwvOyuUJ49rhKWNUpna73W8bIidQNUqyXzsmtoM6U2MnfmCEwv2UfezUodpqdvGoAv5E3e8XwRE7ZGM6jkrXA_a69WTioDfvXk8EGA1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=MZAbJafLFWQuGhqmeflRrTWEBKBsyDQdbdHb1MOgqNjb5olpWpirFTRk4bPEnC70FAg-N8ZcLSrKYijKfZ80qEgSEotLZF_s-1T-ByNNCoNfB03XSNUtnuEraYpSWIfvxTvofUgvNTtIjAt77bQkNgnLEhNWu4iLaHy4GiN5CbA1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=jnkEPEsxJwe9VtY2ABy3hcek4WisOe1ogJuI_MyEBxUe2o9Vfjrf2mqTV1BjUMFlJRycaLtMkemA-tHFuIQliOQ4chKN_x282sQhxkMSMhHuRc52s9Ky3DnXNjx2ZCYNPk044_GCmAC-kEwZ-0FHGxDc7lEe4CbMTOcQbZ2lp8c1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=EphZozeXI8xtErGF0KnYl2m-7RUkN-gL8piaVj99GWr2s-EC3RnHBFbndndNOmTb80cNL8DtTUyeg0cyf15ZEMUxrSemU-DnOqZviDuMbQ0LM6GKJHuWkYTwXe21J-z8SCE7dXVNtFGPbxCnOUic_FTNKosU4r9wCGrqDbHX7rm07FnX-DMN-I1ilOuUGU7J0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Jvd74vGIsNsgffpbLbjFA09qGxDxiQo3hYcoriTRQ0yIGOyUPqQRLiW3OVFx4SopwBte7RE6imnBjQr-7JWHerqCZ1I7w9aI7eaqdg1s6iQgtzYoou3gXdpxt9LC3uCmCZwH8BD-bf4CrOF27FHBPhK4qq6hBPDAzJkLVFTZFIk1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=xudHV66ISRdasDh9_YhMa9xS40mr7tvNx7GuYB3Kkd3kqQ2FLBEMfKZyNimyv4stMb0uysYDcV01d73g4A2KDx5F1rlV8UJXKY7nq414PKuknMFswRLejzhBGqCa0Jxks6zEbdSbfXkl7ztBrqpEs8QnmUjN_MpycqLgszvbs87ohCXC1LFJNsAkYQBGlzaT0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=BBvtdFxs50guYFP2YBZiIx3WvVpZKD2uzTkHwv9aJqemwWMDw6zzCYWOKoUfsiGvOYt1nUx6MzrEBX-rP8ezq4i687HoBHbqB3-Da9bPyQB3bcu65kF-mT24Vz2VAPWXMDAXVBwfnjipAv7yNO-DFJV_R6xYQ8YEk4hJK2-F-iM1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=RyGftF7SOLXooBWYsQ7vMWYV_rK7sHt7d6xncPXcLba0vZszWpLtx4EGmCSqrOIfnG_W0L7sM9lAltIkzKaJVf9SoTffuUYlEOQcpd9hRRhucgXZ6C0TmIirzxkTU_x0qcnblUGEsdRxNQEHulgG0K77BfI36r6gctj8WcFNysQ1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=gePkQzAK5LirvwPKRVBkFue053Yht7MORf_ZP97wmwx6KnvS9YWJbXLsEluEXV8Flnsbtu1rAsvnMXWGHUH7TtViw_6J78pPKsWdkO_kNUEwaWZkDWcY_FAgultjIgJCcWTHM3lXJFeKwaTNRFw7U26ozcCfS03BeT8bO1w33DI1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=TBmHSh9SgweNWNSHHEP27RBv79saWArIVcVsmmVAcVjhwxaPTBOGxfNX9Hy5nNUw83Wcy7ronfniLliAPBQhDw0mCMlB8k2YfKT6FOvixRF1F1wqks95PnqFpSadk03bU0fb4hJZUrPU_9fWTdosMg2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=RxHoeH4CqB14aVkWHfI8X0kvImuaQdO8rEOTiZj-U4sO6WRgQKkIvyoQDRTYh-XGWywySn3JOyIESqlK7tWytaz11AhQ9sYm2wVhSnMzmXdDiwJssa8M7a3LCKUNbDQrEqyZ1RwoRvgXCsypBDimUvv04f43M6N2vL8Di0ekqPbycmqiXTpiQW3HLS-RKaiN0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=I8hv_akDfMzokteCX4WzVJyb4zt3CUjvDDX7cYjhwcqK3EgLIx-e7wabDM609FGJmViJqYlBoA2TC4HL-K8uP9Uh1rR6gNrAa1TnbSTWeJ04FAmC2JjgGKnEzqEhMCzxx3g0FMOuaPcywx_7nkTCDw2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=_nkMVneIrOkNiKNGCL4pJcm3GrzSdgI7TmnJoMNUy7-acYjC_ixsrlAgjZYHHu-U0k4AcWOH_Sk27nnW5yoiNjfqXk_UZwCL-EYX3XQVN_oaARXGCNokf7Wqm_yYEaRoGQ01sNX8tAy1FfBfJV2pvueOGxCLSfkvM0-0SvBeqd01&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=jXMKMFITux9SvEwvB0Ocr_Zhk0KVTrcT4BcAnmwl4dBMbMpd9uWjuM6rQWDYlwQ4qs0mY__E2KmggIBIYrAO5klBZSOVlrNrlBCT5mkW8aQrTDmSUufH6FFI_panuv8HwIs4bkbL_u_1r6v0sevbvCzM6mC4Y5oL-Wa6vamaL2E1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=EHerF5NqMZeE0c7aS4Pn5jHArSa7TUOIfXolHCgEWrBHPJg1YWL3JJMMKNC-5jjZiDKx5YADGRLWF6HTtta1kYtjaj54N7K59nGTpaZfxV4xLexj2VQDjI7zme8XEvdmEXbdXHor4oUUCMfxhFFGn3ZfJ8BGX5RgO6fw3iC5k8k1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=M5lnG-0_KY-PING9S0z1QZBqVGGGUMYyoTeV0L78OrEtDIRV_ZhZX4Y49r1FJYYYOWP56nECOuuLCrWEd712VAy_NuU3pa3LL2Jnp0sx9k0hTLZ7SIPFLggR5Q7wZIxe-MOhK_c0diaFkxYuyOZaSKLq4tfuFSFxUI-yY-WsNdk1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=SWKQZDea1MyDgZfyDfQedjAAo3ua5WmSXCBEOUmy6-zz5Qk-fbPUJcbS1abZqeHbTcwKF0Jzs9k6NOO64pcmOQEzvssTP1GJ7EsqTqm6fDrx_evRdqzAbKcA5zgKSv6M8LswHcNQiy2_kKnmP8ltTrBAZSb9Fa6RIwCLzC4spC81&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Qyz-j268q-zZtpbYdhu8bRFBwoVCjxi-VDVLAIg_9-WNsuRfOzW7ZUlkXsGsZLt-Ji4Hlt_hPu2jC-jS2hUNFsrYzKTXoPydte3YWEM14ohZMknk6-vdUijn9evLtBfQ-poGNZ5AhhYlPjIMBmf12my9occ_xKa96Tgdic2FdATTXmQ8Dq36Zg6GEkT8ebOq0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=XzLLe6wIJOEOeNz0gOJc2miIef_tF7RngtJ2isYcXJhWTYnKxJiy1JBHHDX_NNx2tNiYpIgLW6lJf1owSr8PmAj7mWhSPiRIMqhdX3Ig5QBQJMIEX8UVvnpzXpvocZOGC8GvE-Xc4Q4uWQjRCppqocimPHW-r0fJd03cGJl-Ht3CJ8AaY300VBu2v8gQ9RpTfMarEbNleuUwqsGpXxEv8g2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=dXmDedEoOWL6KhjrF9PFTQaP1VvJ15kQe4QaneOqyttMQJsQAYYyJCqXkGxZGNOW3hMngGvoNB_ML6NNkctqa-rZYul8o82xr0E7AeSNJ8xn4RboLXvFEwLBg6tNbCdnXm1N5iCjXSvvkUBxyQr8sA2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=PYT6yNI6se1sLOX8erHYq0NyIb8SjEMwmI9W8vRTJUmq8L5Dgnrvd-g-o9H2IYEoM9KyJwQyiNgwF1n1BZMrVZ-3z1veGXBBnz75OeQPE-IlXL_FTd1jk7eBZtCI3pmyR7icE1qAtpm01Xg6h0_IfR0QSwliZrI7LIcgP7_Zk3A1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Grmt5abHv_iKYLutbfHXHI7BiSLe_hI6tGCqLHkpiSaK9-zTXlZ1ouuGxS2NZ82ehjE7L74GIZy0L__hNknDnpSPluKhsEN-VSw8MX7Qzn2ECcnit0y6-6GTpvqD1-C3UyFaGXLdrpVwtBh4qBtj1MKZCMHFpF84HZxVBXMFOtGaXso1Dp6zj28m5nM0zPbj0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=0vjq_K3wD2eC0NpZYCj4Dn29iSAxNwAIJ2_uNkaFKSYWv07OVc1DGqdfETNS7FTe5VI2jSdLAMeq1eYYybgS0ZxFuoLgUGzfghEnp5BPsqhqo0urwR5lWlFpbVDaT6d3BEYDMK3CrpCP9SZNH-ddh9kjvux4mlTOb3An-g12YP3XIN7iNzCPPHNWT6rKYWPE0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=ZnwsJgcmnjbZ01o5MH7rq1QKfIzyQI9OKjW7Bkymvthk-yLyrik5EUUcookDLZZPE52JOjfIbR2jnQ_lmyvLkIijPaK6vOZ08TmcxDiMTIiCVRDnKcjMFaXCsPEpnawVfJnvkiccyYsGF5tcVzjDhw2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Z1VJtamvfJc1OVRBjASdk7bpb3lezPmteNwWJ34DOlqPsO3e5XqoNVScSHpQ7l1_cfVGiwTgG2ZWDo3zO5cCtIDMhwDeeKl_QBOBer18S5rDMV1sEur0xGnzjISnr_AhS8ggiDRd2JGjdWrEymzW2w2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=4x5dLhWh4il3IboyRkRNyW2v4ccC_bntZbLfY2pNFUxpQQeIBuxlB9w5n_D8qYLmpk2HkKQwrw98VnD1-w8643byGUz-g5EnSxLU6-0Xz3FUbK7ftaWXWO12i2rH4YQ5qElnww_r2lQaM-CYfKhKGNkSozIBcyTeLcT_nAdFwpk1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=SfOoAfmsi8xMiAi1QctTLiv7Bm8maY_ZG_u7JVN7RLA7OfcLhoGAMmrsXWKT6GjXxkqgzxTnisFGYEHcSM8HM0Yb4lyt4mZjrowj5wCmyB8fNc0f3mmnMOv1_e1hgbLJfrIkCqOtc5PGxHlMVwpsH-AaWr49SLhCrIo_ydm2PCI1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=poCaG7L1gUJMfcW4gvMNrY53etpJ-3nF7jOFIgt2YihC-3AfgGHPpoXf4eh5-5v2n-e1pl4N4B-CYFv06ohGOsLnJ3tqlBh8LlsBuE_Mk_mD0v7UHlVkDaTYdXQbwkTcy-dZ_kZCCcyM73zq36LtMZ1OreN12_KZsP_rcJ4_a2Q1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=6SnJMfiG_8dSDaqITOPTrEjayj9FXmKEkwtYhPrXumuajZWZwakkHnN4AY28a4z9L_YUDUb6AiV00DR6C4zq1bHEBCtalxdylP8g4k2eUDMsNGVottVs1kg0C6CoQSAMz4Ga8ZvMgVo_CsMixQxMQw2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Km5AvTwguk4f7jko68veDB-4McLTBL7x7u_HMJAezu_mVLvyA5wCHHVchIPtIdFGzixC6pVU2frdgjEIx0JQBcyPbhkjMP3VVdfFGoG-sKAh7Fpdyb6__2gt5latJTHYRJtYsHxCL8jnm3X8TS4354lGKCDNa-J96xz6SBrkQjM1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=hJMQ6e_MCXedLwX9WDCp9CNoAEVvoK4gejeqh7eY7To2zo5yP2zkdNip_SNEjUgIUo9S9djIHXW_cDC3fTBpQHoWQZlaLqa_RKi6VBjXRHc7GXr4cDIxSszqcOkCCWt2acRvm0Aaz2IqD1YThXcXTvPt3Og40cepB2o-lj5MUOE1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=G-G7NoV-svtrZXg3BGvQKzaitWpjnAabE4-snhnCgmLOcgP7mvA7XfpGfnIj5HXYFFHZqEW8ujrqTt2bRgF98nhWfXckjhzbo24pYObjAsGgo3okhM-WUTP2-73ta9Rl4kdQXb04-b0Jjgr3zzfH8g2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=LYnYHow7YEc7ZXkFADBQdXRQWXLdkqknEuRM3ROmVW95aaJYggATjhoAFsylT4daf4_1fZ3d1uWEairFfTb3DnSJtptrnmrhfXzKNWM-tKiLtJWvgCFFulLk9Y1aqvTUGVxTZKt0igys9Ah4SEk68Cwp0nRXWYVman3jkPAPuXQ1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=asESecu0tbgqXDka6j4iwWj82sJD-g6EcY4o3ZtXgK_8Z_quPe9kN1z0NmfkaykJOK2OBjMgwcTnVtHsf269Mmmpvdpr_t0lDB4yST2M7BRaY7Dm1SmKP6dT-zEEo-ciRJ6E7BuC1IX5ycaycwo6Ow2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=O939FVgVciWFEJNbj8yoB6D818o7-cj2GAdsD0ZnQBBZmzlOMaX-I__-tlVZi2foYNd5JspVHQeNDtlHslnawdc6GPMSyTSeG_V09AwIPnOLaTfV_KPmWAWiBq8bBMwtfNqsvDBDf9XDhsrIb5dLPzqoZ_gneGLQP_QxvI9Gxjc1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=SdC2f9VprtVBMRRFkn_VixGdWTcTwx31qCRzBg3JfIX2qL4Hgk93o-Ty7zVpUz8wfGFxtUQ2AJG0NJlu_GFafgBVykEXVvYkUwrZMeM3FoSAr0Q99DMzWucqFuQsz71iMUu9oIr2eAe072KeLMF8cZO1RF2bX1SP8jYYjreYWOw1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=prGyQI4i5d0bC7kWMcoGjKuSnpqu4KqAZUiwwB7_W5N1KduJd-kp4YeSxI-NZjpjtQrH1gPhD-1eMPOgp2j9BUFQS3Mc3eFPfgX7Z7xQZdw-avcuKrGYy_jEUaBhw1r7f5w2xKrRBOzKZiJrILuFXq40XD5ck_I_7vOK43_ExgA1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=7OQgqQyl2rLArs9ityq6yHWIn0BxZio2SbRJWoequh48CRXQS-LWyVN2Xf04OT8eSbaBZntt-bJYEQCjeeXfZH8ngEtndjHzMqZT-rOhSMlZ3DIAxHtyTnaAHtUjJi1FLEAGOgPKMoUuR41jvnQ_m_p6IqaeT7dHHzaFVXfU6Nk1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Qwzupa8YBmRdu9Ig4ul5O4TO0hW_u0hD362-LiKM0oep91f4Kal3thk7fL0t_TiSvIBuWKAYJEEgpc5jx547Ci7z_aflga3M6ae_fbfn6_H-rEaYQf-NitVWHjENHksvGZAgcn92hcy1Z-josRHlNA2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=FV0wjJJ2IOj_JP9V3q6G57pyBccNc0kIDtv8VAk9ui1k5RUjQ8BZrouElGusdfZ0gfowK4NSzRXZGUVS1dLIRYbOF1w1yTDscv-4nSBro1ymdsaorfJ99olPmmbUYdx7yDPOGExEV4ckmZYcS_JQGmx2y6J3trbsrQGwuUhWmDk1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=C6XGdVaN-YGEIb3v4sAG52rL6PL5NzYcS78rm8Mp8bgIgZCzEAii1Qmx0mryzszAwN3s9oo0yU42j7vx0x-SNY4l9oL1dnXB4i8T8lyN9jkKe6ufOakvUlK0KZmvT0qKK43_Mvn-U_EyuqJqjHbMF15FOFXqLMH98RfpOucCNv81&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=LUJwPnfjz-S5jv3QF11yf810QF3gluvVtmbhhIKG6q0Rw2KlEUldqEgTuBhyVr1SFIrcYTsYQWtL7b93LO0_TPDbnCfNsvMGQ5Th04Fa1IrIT8AnS5YGsdmXGMPg5g2Dqmmni5vd7QaAj47A-Ev9Rmgfs6H7QIgKoL0-SUDle0c1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=HvRET2Q6Z_5y1W7NI-1Cymvt0s-s12ch4BLVkDju35lzvZVBlWrEioWYBI3N9uB3CF5W6hJlkC1bhgDNF3D3j03ezGrAW1DdNihoFZ1sL4CLfQY5QylnTN7ZBqTbXiFPrEapGIXlhV0xP2HdDmItHyn2KKxzZGZgKTN4HjgkrZY1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=IqM-hmWIexFUXkerjDAw8LAvEBNlNSd7-X88xH6Pvexq2dEoeJ_KmDmweZ99UTCLM_edDxNOeRHbNyoTU126Lj3naa-iAs8yeX9D4TA_w5sxAgdio5oysFXd8CobeBJBvB9S4tF6VsMvSYqYYYlCd4_TonesyVks8elakvG3h-M1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Zt_TquFaOfFosKlAe5LzRFCTn3oS6REJsj3NwQ3lfEmQtg5qZrDS4QG4k0CYN1WolsHiVjGteMfF87hTghRWeu5iUIZHpVHq4RTmGmvyuzz8GRj_qYXztdMT0IzhzEPqu5SdszO4dcoMZcxcOdZMLBEskiO1iy5-4TGGSfguwHM1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=8qp-S7MVPKDaRglL-HXGgzMgwKnmaEkbNUw3M1mqIZ1VABbFLzLCPYURZDrR2NJzS6Ix5z9LeXv5Jibj-NWif8rGuPc-i6tGBRx_11EhD3BRt0nfwiQ92z0Q03TXz3QEhiXnGj8u3LCzA3IYL3XX-0kFsYIr06iDpRrGphSp_WM1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Jk3xpF93UmuqvYjdmYYCHaTv_LrzD9sRjkhoQSsXMzE2rTNUhjD9NN7fmYlFdhJ2aycCICn_0Jj1_SLWf-qHfwUmlDfBhABhC3qAh86TkEsFoP6--ULlrm66TgjBBTjvyXSxEb3eOJgzBAScqJgG9Q2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=OTLQ1rI_Ds5cO7HwchUhmeAhll79nlTlG4mSeO9NhmEi_UtspQDGJcFV9-ZytqnMOZ8QnorFR2NIMXzJfH1r3HW9tFR512VpexbGiToUdRt_wFr3fi-8VaPuJnkgCh04bXyYEOQ9qDIYliT5Z8z-pg2&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=_2moiR-ji4QVrT4vPTs0_41ibY0VcSB86YY2acch5wELCHOCeqkYw4yRm6S728OhyE-_jq1XelUZbw31RWvOW3cw_lac2ClxJAUrjvkaimJX07Icj37uG2gIqYbOi1Yxc9RTptWja9u2_bgEn_eK7wdfT26ahVuchqetvf4ng-M1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=Xfp5LAGw4v-DoIqACCpqgzOCHRvU6-Wu88CHt3R__0aq7JrykiRKpGNrTurqJcvLRUNEL6UvOuUUwk7sZdiyf2lsFMaAilEyPe0ZHK0NJZpyF5Kb6jDqit7aB1ugIJApRIOcDduWVoCZ3oku3y2Fdvbf_4_BsXg8P_kb1vQXHiY1&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=5aqBvENSrfdUq7Vzdioxaf0V-tHWCsjyh4KHVxgT4kQXSIsMqpy3TfkiFftLFBHAt2EBSyj0bXIW2jgi4l72rvtYFjAehdJXaVLZIwPXCxZ5dKw6rxFxxGBzSSzSEAanMYIO8_QGWFuUUydpGnDURgSKsdoJXQPeWE7Bge5fQzCfJLPjbNtuOH-z_kXmumGa0&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<script src="/PCDetails/ScriptResource.axd?d=lBo4PMjXj4RtPB8jA0VHs2_CrzC-EBVR3acgvLYujaM4GJ_EX2mxDPTUwlV3d2gP83K0q8Y1zhYEpu7gIpzmg3s8LeC9bZnVsVVgVB1aCVHI2d6SNWMlR2x4-PYvNyyfTQXUN822Eeg_QUCBAnLiPRIyC3bkVsCbWbCsWAWRxE81&amp;t=ffffffffda74082d" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5DFFB870" />
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="IA0_i4COXnri0Hvay3rzcmisrQDtAFZn6J9IfnqLP5OBkzT7BHpZ6130CPeRO4J_hg2aJ1a5EbuPAYAj4agSdCB7E-hgZnSmTwPEeE8xgvxJPLaBWlnVTaTeuAo0Vc8D0" />
+</div>
+
+<h2 class="h2">
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'form2', [], [], [], 90, '');
+//]]>
+</script>
+
+PC Health Check-up Report v10.0
+</h2>
+    <p class="h2">
+        &nbsp;</p>
+
+    <center><table>
+
+    <tr>
+        <td class="auto-style1"><b>User Name :</b>&nbsp</td>
+        <td class="auto-style12" style="width: 245px">
+            <span id="infoUserName">WIPRO\rsarmas</span>
+        </td>
+        <td class="auto-style13"></td>
+        <td class="auto-style1"><b>Date and Time :</b>&nbsp;</td>
+        <td class="auto-style1">
+            <span id="InfoDateNow">11/23/2017 4:55:00 PM</span>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Host Name :</b>&nbsp;</td>
+        <td class="auto-style4" style="width: 245px">
+            <span id="InfoAssetID">L-156075101</span>
+        </td>
+        <td class="auto-style5"></td>
+        <td class="auto-style14"><b>System IP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b>&nbsp</td>
+        <td>
+            <span id="InfoSystemIP">10.154.18.137</span>
+        </td>
+    </tr>
+</table></center>
+<br/><br/>
+
+
+
+
+
+
+
+
+<div class="cheader">
+<div id="Panel1">
+	
+<input type="image" name="ImageButton1" id="ImageButton1" class="imgbtn" src="images/plusicon.png" /><h2>System Information </h2>
+
+</div>
+</div>
+<div class="cdata">
+<div id="Panel2">
+	
+
+<CENTER><table id="tbSysinfo" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th>Name</th>
+			<th>Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>
+        Scanned Date and Time</td>
+			<td>
+            <span id="txtScanDate">11/23/2017 4:55:00 PM</span>
+        </td>
+			<td aria-autocomplete="both" aria-checked="undefined" bgcolor="#00FF33">Ok</td>
+		</tr>
+		<tr>
+			<td>
+        Computer name</td>
+			<td>
+            <span id="txtCompName">L-156075101</span>
+        </td>
+			<td bgcolor="#00FF33">Ok</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Computer Type</td>
+			<td class="auto-style1">
+               <span id="txtComptype">Laptop</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Ok</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Domain Name</td>
+			<td class="auto-style1">
+               <span id="txtDomainName">wipro.com</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Ok</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Asset ID</td>
+			<td class="auto-style1">
+               <span id="txtAssetNumber">156075101</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Ok</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           End User Name</td>
+			<td class="auto-style1">
+               <span id="txtEndUserName">WIPRO\rsarmas</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Ok</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           IP Address</td>
+			<td class="auto-style1">
+               <span id="txtIpAddress">10.154.18.137</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           MAC Address</td>
+			<td class="auto-style1">
+               <span id="txtMacAddress">94:57:A5:B0:EC:26</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Network</td>
+			<td class="auto-style1">
+               <span id="txtNetwork">Backbone N/w</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           System Type</td>
+			<td class="auto-style1">
+               <span id="txtSystemType">64 Bit system</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+
+<br /><br />
+
+
+</div>
+</div> 
+ 
+<div class="cheader">
+<div id="Panel3">
+	
+<input type="image" name="ImageButton2" id="ImageButton2" class="imgbtn" src="images/plusicon.png" /><h2>OS information </h2>
+
+</div>
+</div>
+<div class="cdata">
+<div id="Panel4">
+	
+
+    <CENTER><table id="tbOSinfo" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th class="auto-style2">Name</th>
+			<th>Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td class="auto-style2"> OS Name </td>
+			<td> <span id="txtOSName">Microsoft Windows 10 EnterpriseBuild 9200</span></td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> OS Installation Folder </td>
+			<td> <span id="txtstrSysRoot">C:\Windows</span></td>
+			<td bgcolor="#00FF33"> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> OS Image Version </td>
+			<td> <span id="txtOSVer">IMAGE VERSION:-JFM17-WIN10-LAPTOP</span></td>
+			<td bgcolor="#00FF33"> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> OS Installed Date </td>
+			<td> <span id="txtInstallDate">11/24/2017 3:45:00 AM</span></td>
+			<td bgcolor="#00FF33"> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> System UP Time </td>
+			<td> <span id="txtLastBootUpTime">0 days, 1 hours, 28 minutes </span></td>
+			<td bgcolor="#00FF33"> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> OS Image </td>
+			<td> <span id="txtOSimg">Wipro OS Image</span></td>
+			<td bgcolor="#00FF33"> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> Total Memmory (RAM) </td>
+			<td> <span id="txttotmemory">7113 MB</span></td>
+			<td bgcolor="#00FF33"> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> Virtual Memory Location </td>
+			<td> <span id="txtVirMemory">Automatic - System Managed</span></td>
+			<td bgcolor="#00FF33"> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> My Documents Path (Rec. Path in D) </td>
+			<td> <span id="txtStrPath">C:\Users\rsarmas\Documents</span></td>
+			<td bgcolor="#00FF33"> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style11"> OS Version </td>
+			<td class="auto-style11"> <span id="txtOSUPDAte">OS is Updated</span></td>
+			<td class="auto-style11" bgcolor="#00FF33"> Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+
+
+
+
+
+
+
+
+
+
+<br /><br />
+
+
+</div>
+</div>   
+
+
+<div class="cheader">
+<div id="Panel5">
+	
+<input type="image" name="ImageButton3" id="ImageButton3" class="imgbtn" src="images/plusicon.png" /><h2>Disk Drive information </h2>
+
+</div>
+</div>
+
+    <div class="cdata">
+<div id="Panel6">
+	
+
+    <CENTER><table id="tbDiskInfo" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th class="auto-style1">Name</th>
+			<th class="auto-style1">Description</th>
+			<th class="auto-style1">Status</th>
+		</tr>
+		<tr>
+			<td>
+        Name</td>
+			<td>
+            <span id="txtBName">Default System BIOS</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td>
+        Version</td>
+			<td>
+            <span id="txtBversion">HPQOEM - 3</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Caption</td>
+			<td class="auto-style1">
+               <span id="txtBCaption">Default System BIOS</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Manufacturer</td>
+			<td class="auto-style1">
+               <span id="txtBManfact">Hewlett-Packard</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           ReleaseDate</td>
+			<td class="auto-style1">
+               <span id="txtBRelDate">20150722000000.000000+000</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           BiosSerialNumber</td>
+			<td class="auto-style1">
+               <span id="txtBSl">CND5334V4B</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Total Ram Size</td>
+			<td class="auto-style1">
+               <span id="txtRamSize">7GB</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Model</td>
+			<td class="auto-style1">
+               <span id="txtModel">HGST HTS725050A7E630</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Name</td>
+			<td class="auto-style1">
+               <span id="txtName">\\.\PHYSICALDRIVE0</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td>
+        HardiskSerialNumber:</td>
+			<td>
+            <span id="txtHddSlNo">      RC250FCB2EZ02K</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td>
+        Size</td>
+			<td>
+            <span id="txtHddSize">465.76GB</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Drive</td>
+			<td class="auto-style1">
+            <b>   <span id="txtHddDrive">C:\</span></b>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Creation time</td>
+			<td class="auto-style1">
+               <span id="txtCreatTime">7/16/2016 11:34:24 AM</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+          File type</td>
+			<td class="auto-style1">
+               <span id="txtFtype">NTFS</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Free space</td>
+			<td class="auto-style1">
+               <span id="txtFreeSpace">73.01GB</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Fixed Space</td>
+			<td class="auto-style1">
+               <span id="txtFixedSpace">103.94GB</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trHddDrive2">
+			<td class="auto-style1">
+          Drive</td>
+			<td class="auto-style1">
+             <b>  <span id="txtHddDrive2">F:\</span></b>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trCreatTime2">
+			<td class="auto-style1">
+           Creation time</td>
+			<td class="auto-style1">
+               <span id="txtCreatTime2">3/15/2016 11:09:21 AM</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trFType2">
+			<td class="auto-style1">         File type</td>
+			<td class="auto-style1">
+               <span id="txtFType2">NTFS</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trFreeSpace2">
+			<td class="auto-style1">           Free space</td>
+			<td class="auto-style1">
+               <span id="txtFreeSpace2">36.5GB</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trFixedSpace2">
+			<td class="auto-style1">     Fixed space</td>
+			<td class="auto-style1">
+               <span id="txtFixedSpace2">185.55GB</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trHddDrive3">
+			<td class="auto-style1">
+          Drive</td>
+			<td class="auto-style1">
+                <b> <span id="txtHddDrive3">E:\</span></b> 
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trCreatTime3">
+			<td class="auto-style1">
+           Creation time</td>
+			<td class="auto-style1">
+                     <span id="txtCreatTime3">3/15/2016 11:08:43 AM</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trFType3">
+			<td class="auto-style1">         File type</td>
+			<td class="auto-style1">
+               <span id="txtFType3">NTFS</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trFreeSpace3">
+			<td class="auto-style1">           Free space</td>
+			<td class="auto-style1">
+               <span id="txtFreeSpace3">69.25GB</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trFixedSpace3">
+			<td class="auto-style1">     Fixed space</td>
+			<td class="auto-style1">
+               <span id="txtFixedSpace3">175.78GB</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+
+
+
+
+
+
+
+
+
+
+<br /><br />
+
+
+</div>
+</div>   
+
+
+
+
+    <div class="cheader">
+<div id="Panel33">
+	
+<input type="image" name="ImageButton17" id="ImageButton17" class="imgbtn" src="images/plusicon.png" /><h2>Internet Explorer Settings </h2>
+
+</div>
+</div>
+
+    <div class="cdata">
+<div id="Panel34">
+	
+<CENTER><table id="tbIEInfo" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th>Name</th>
+			<th>Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>
+        IE Cookies</td>
+			<td>
+            <span id="txtCookies">Enabled</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td>
+      Auto Detect Settings</td>
+			<td>
+            <span id="txtAutoDetect">Disabled</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+         Auto Config Script</td>
+			<td class="auto-style1">
+               <span id="txtAutoConfig">Not Enabled</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td>
+       Proxy</td>
+			<td>
+            <span id="txtProxy">Disabled</span>
+        </td>
+			<td bgcolor="#00FF33"><span id="txtIeStat">Info</span></td>
+		</tr>
+		<tr>
+			<td>
+      Proxy Server Address</td>
+			<td>
+            <span id="txtProxyAddr">No Proxy</span>
+        </td>
+			<td bgcolor="#00FF33"><span id="txtIeStat1">Info</span></td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+         Proxy Exceptions</td>
+			<td class="auto-style1">
+               <span id="txtProxyExcep">No Exceptions</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+    <br /><br />
+
+</div>
+</div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="cheader">
+<div id="Panel29">
+	
+<input type="image" name="ImageButton15" id="ImageButton15" class="imgbtn" src="images/plusicon.png" /><h2>Printer Configuration </h2>
+
+</div>
+</div>
+
+
+ <div class="cdata">
+<div id="Panel30">
+	
+<CENTER><table id="tbPrintConfig" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th>Name</th>
+			<th>Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>
+        <span id="txtPrinter1">Printer Name: Send To OneNote 16</span>
+        </td>
+			<td>
+            <span id="txtPaperSize1">Paper Size: A4</span>
+        </td>
+			<td bgcolor="Red">
+            <span id="txtPrintStatus1">Duplex Disabled</span>
+        </td>
+		</tr>
+		<tr>
+			<td style="height: 26px">
+        <span id="txtPrinter2">Printer Name: Fax</span>
+       </td>
+			<td style="height: 26px">
+            <span id="txtPaperSize2">Paper Size: A4</span>
+        </td>
+			<td style="height: 26px" bgcolor="Red">
+            <span id="txtPrintStatus2">Duplex Disabled</span>
+        </td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           <span id="txtPrinter3">Printer Name: </span>
+         </td>
+			<td class="auto-style1">
+               <span id="txtPaperSize3">Paper Size: </span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">
+               <span id="txtPrintStatus3"></span>
+           </td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+          <span id="txtPrinter4">Printer Name: </span>
+         </td>
+			<td class="auto-style1">
+               <span id="txtPaperSize4">Paper Size: </span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">
+              <span id="txtPrintStatus4"></span>
+          </td>
+		</tr>
+	</table>
+	 </CENTER>  
+    <br /><br />
+
+</div>
+</div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="cheader">
+<div id="Panel7">
+	
+<input type="image" name="ImageButton4" id="ImageButton4" class="imgbtn" src="images/plusicon.png" /><h2>Cloud RMS Status </h2>
+
+</div>
+</div>
+
+    <div class="cdata">
+<div id="Panel8">
+	
+<CENTER><table id="tbMsm" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th>Name</th>
+			<th>Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>
+       Cloud RMS Status</td>
+			<td>
+            <span id="rmspresence">RMS is not enabled</span>
+        </td>
+			<td bgcolor="red">Not enabled</td>
+		</tr>
+	</table>
+	 </CENTER>  
+    <br /><br />
+
+</div>
+</div>   
+
+
+
+
+
+
+
+
+
+
+<div class="cheader">
+<div id="Panel35">
+	
+<input type="image" name="ImageButton18" id="ImageButton18" class="imgbtn" src="images/plusicon.png" /><h2>Nexthink Installation Status </h2>
+
+</div>
+</div>
+
+    <div class="cdata">
+<div id="Panel36">
+	
+<CENTER><table id="tbNxt" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th>Name</th>
+			<th>Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>
+        Nexthink</td>
+			<td>
+            <span id="txtNxt"></span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+    <br /><br />
+
+</div>
+</div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="cheader">
+<div id="Panel31">
+	
+<input type="image" name="ImageButton16" id="ImageButton16" class="imgbtn" src="images/plusicon.png" /><h2>McAfee EndPoint Protection Status </h2>
+
+</div>
+</div>
+
+
+    <div class="cdata">
+<div id="Panel32">
+	
+<CENTER><table id="tbMcAfee" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th style="height: 23px">Name</th>
+			<th style="height: 23px">Description</th>
+			<th style="height: 23px">Status</th>
+		</tr>
+		<tr>
+			<td>
+        Antivirus Agent</td>
+			<td>
+            <span id="txtDisplayName"></span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td>
+        Antivirus Version</td>
+			<td>
+            <span id="txtVer"></span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+           Antivirus Enterprise</td>
+			<td class="auto-style1">
+               <span id="txtDisplayName1"></span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+          Antivirus Enterprise Version</td>
+			<td class="auto-style1">
+               <span id="txtVer1"></span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+          Antivirus McAfee Framework</td>
+			<td class="auto-style1">
+               <span id="txtServiceStat">Service is not running.</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+          Antivirus Last Upadate Date</td>
+			<td class="auto-style1">
+               <span id="txtLastUpdateDate">Sat Dec 30 1899 00:00:00 GMT+0530 (India Standard Time)</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style1">
+          Antivirus Shield</td>
+			<td class="auto-style1">
+               <span id="txtServiceStat1">Service is not running.</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+    <br /><br />
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+     <div class="cheader">
+<div id="Panel9">
+	
+<input type="image" name="ImageButton5" id="ImageButton5" class="imgbtn" src="images/plusicon.png" />
+    
+    <h2>Bitlocker Information </h2>
+
+</div>
+</div>
+
+    <div class="cdata">
+<div id="Panel10">
+	
+
+
+    <CENTER><table id="tbBitLock" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th>Name</th>
+			<th>Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td style="height: 23px">
+             BitLocker Info</td>
+			<td style="height: 23px">
+           <b> <span id="txtBitVol1">Admin access is required to fecth the BitLocker Information. Please run the application with admin rights. If you have admin rights and User Account control is enabled in the system, then Right click on the PC Health Check-up application and select Run as Administrator and click on Yes while the prompt appears.</span></b>
+        </td>
+			<td style="height: 23px" bgcolor="#00FF33">Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+
+
+<br /><br />
+
+
+</div>
+</div>   
+
+     <div class="cheader">
+<div id="Panel11">
+	
+<input type="image" name="ImageButton6" id="ImageButton6" class="imgbtn" src="images/plusicon.png" /><h2>Microsoft SCCM </h2>
+
+</div>
+</div>
+
+    <div class="cdata">
+<div id="Panel12">
+	
+
+
+
+
+    <CENTER><table id="tbsccm" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th class="auto-style2">Name</th>
+			<th>Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td class="auto-style2"> SCCM Agent </td>
+			<td> <span id="txtsccm">Installed</span></td>
+			<td bgcolor="#00FF33">
+            <span id="sccmStatus">Info</span>
+        </td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> SCCM Client Version </td>
+			<td> <span id="txtsccmver"> *** SCCM Client SP2 NOT Installed ***</span></td>
+			<td bgcolor="red"> 
+            <span id="sccmVerStatus">Non-Compliance</span>
+        </td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> SCCM Cache Size </td>
+			<td> <span id="txtsccmsize">C:\SCCMCACHE\ccmcache:0   GB</span></td>
+			<td bgcolor="#00FF33"> 
+               <span id="sccmCacheStatus">Info</span>
+           </td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> Last Windows Update Patch </td>
+			<td> <span id="txtsccmUpdatePatch">HP - HIDClass - 4/11/2016 12:00:00 AM - 1.1.17.1</span></td>
+			<td bgcolor="#00FF33"> 
+               <span id="sccmUpdateStatus">Info</span>
+               </td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> Last Patch Update Date </td>
+			<td> <span id="txtsccmUpdateDate">Thu Nov 23 2017 10:10:36 GMT+0530 (India Standard Time)</span></td>
+			<td bgcolor="#00FF33"> 
+               <span id="sccmUpdateDate">Info</span>
+               </td>
+		</tr>
+	</table>
+	
+</center>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br />
+
+
+</div>
+</div>   
+
+
+     <div class="cheader">
+<div id="Panel13">
+	
+<input type="image" name="ImageButton7" id="ImageButton7" class="imgbtn" src="images/plusicon.png" /><h2>SCCM Services Information </h2>
+
+</div>
+</div>
+
+    <div class="cdata">
+<div id="Panel14">
+	
+
+
+<CENTER><table id="tbsccmserv" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th class="auto-style2">Name</th>
+			<th>Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td class="auto-style2"> SMS Agent Host </td>
+			<td> <span id="txtSMSAgentHost">Running</span></td>
+			<td bgcolor="#00FF33"> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> Windows Update </td>
+			<td> <span id="txtWinUpdate">Running</span></td>
+			<td bgcolor="#00FF33"> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> Background Intelligent Transfer Service </td>
+			<td> <span id="txtTransService">Running</span></td>
+			<td bgcolor="#00FF33"> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> Distributed Transaction Coordinator </td>
+			<td> <span id="txtTransCord">Stopped</span></td>
+			<td bgcolor="#00FF33"> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style2"> Windows Management Instrumentation </td>
+			<td> <span id="txtWinMgmtInstr">Running</span></td>
+			<td bgcolor="#00FF33"> Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br />
+
+
+</div>
+</div>   
+
+
+    
+     <div class="cheader">
+<div id="Panel15">
+	
+<input type="image" name="ImageButton8" id="ImageButton8" class="imgbtn" src="images/plusicon.png" /><h2>SCCM Certificate check Information </h2>
+
+</div>
+</div>
+
+    <div class="cdata">
+<div id="Panel16">
+	
+
+    <CENTER><table id="tbsccmcert" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th class="auto-style6">Name</th>
+			<th class="auto-style3">Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td class="auto-style6"> Serial Number </td>
+			<td class="auto-style3"> <span id="txtSerialNo">7B005D033905B24CEDC3D756140003005D0339</span></td>
+			<td bgcolor="#00FF33&quot; "> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style6"> Subject Name </td>
+			<td class="auto-style3"> <span id="txtSubjectName">CN=L-156075101.wipro.com</span></td>
+			<td bgcolor="#00FF33&quot; "> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style6"> Issued by  </td>
+			<td class="auto-style3"> <span id="txtIssuedBy">CN=Wipro Class 2 Enterprise CA</span></td>
+			<td bgcolor="#00FF33&quot; "> Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style6"> Validity </td>
+			<td class="auto-style3"> <span id="txtValidity">Valid from 11/23/2017 3:03:32 PM  to  11/23/2018 3:03:32 PM</span></td>
+			<td bgcolor="#00FF33&quot; "> 
+            <span id="validitystatus">Validity will expire After   365  Days</span>
+             </td>
+		</tr>
+	</table>
+	 </CENTER>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br />
+
+
+</div>
+</div>   
+
+        
+     <div class="cheader">
+<div id="Panel17">
+	
+<input type="image" name="ImageButton9" id="ImageButton9" class="imgbtn" src="images/plusicon.png" /><h2>DA Certificate check
+        
+    </h2>
+
+</div>
+</div>
+
+    <div class="cdata">
+<div id="Panel18">
+	
+
+
+
+    <CENTER><table id="tbDAcert" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th>Name</th>
+			<th>Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>
+       DA Certificate Check</td>
+			<td>
+            <span id="txtDAcertcheck">DA Certificate is present in the system</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trDAslno">
+			<td>
+        </td>
+			<td>
+            <span id="txtDASerialNo">7B005D033905B24CEDC3D756140003005D0339</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trDASubName">
+			<td class="auto-style1">
+           </td>
+			<td class="auto-style1">
+               <span id="txtSubName">CN=L-156075101.wipro.com</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trDAIssuedBY">
+			<td class="auto-style1">
+           </td>
+			<td class="auto-style1">
+               <span id="txtDAIssuedBy">CN=Wipro Class 2 Enterprise CA</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trDAVal">
+			<td class="auto-style1">
+           </td>
+			<td class="auto-style1">
+               <span id="txtValiity">Valid from: 11/23/2017 3:03:32 PM  to  11/23/2018 3:03:32 PMValidity will expire After   365  Days</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trDAIntPurpose">
+			<td class="auto-style1">
+           </td>
+			<td class="auto-style1">
+               <span id="txtIntPurpose">Intended PurposesClient Authentication</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trDAOid">
+			<td class="auto-style1">
+           </td>
+			<td class="auto-style1">
+               <span id="txtOidFriendlyName1">Certificate Template Information1.3.6.1.4.1.311.21.7</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr id="trDAValidExp1">
+			<td class="auto-style1">
+           </td>
+			<td class="auto-style1">
+               <span id="txtValidExpiry1">DA Certificate is valid and not expired</span>
+           </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+
+
+
+
+<br /><br />
+
+
+</div>
+</div>   
+
+   <div class="cheader">
+<div id="Panel19">
+	
+<input type="image" name="ImageButton10" id="ImageButton10" class="imgbtn" src="images/plusicon.png" /><h2>NAP Services </h2>
+
+</div>
+</div>
+
+    <div class="cdata">
+<div id="Panel20">
+	
+
+
+
+    <CENTER><table id="tbNAP" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th>Name</th>
+			<th>Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>
+       Network Access Protection Agent</td>
+			<td>
+            <span id="txtNapStat">Not applicable for Windows 10 Operating system</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td>Security Center
+        </td>
+			<td>
+            <span id="txtSecCenter">Running</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+
+<br /><br />
+
+
+
+</div>
+</div>   
+
+    <div class="cheader">
+<div id="Panel21">
+	
+<input type="image" name="ImageButton11" id="ImageButton11" class="imgbtn" src="images/plusicon.png" /><h2>Wireless LAN </h2>
+
+</div>
+</div>
+
+    <div class="cdata">
+<div id="Panel22">
+	
+
+    
+    <CENTER><table id="tbWifi" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th>Name</th>
+			<th>Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>
+      Active Wireless LAN</td>
+			<td>
+            <span id="txtWifiStatus">SSID:Wireless is Not Connected</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td>Wireless LAN
+        </td>
+			<td>
+            <span id="txtWifiName">Wireless LAN Profile: $t@yw!f!</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td>
+    Encryption</td>
+			<td>
+            <span id="txtWifiEncrypt"></span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td>Signal Strength
+        </td>
+			<td>
+            <span id="txtWifiStrngth"></span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td>
+    SSID</td>
+			<td>
+            <span id="txtWifiSsid"></span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td>Channel
+        </td>
+			<td>
+            <span id="txtWifiChannel"></span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+
+
+
+
+
+
+
+
+
+<br /><br />
+
+
+</div>
+</div>   
+        <div class="cheader">
+<div id="Panel23">
+	
+<input type="image" name="ImageButton12" id="ImageButton12" class="imgbtn" src="images/plusicon.png" /><h2>Direct Access Information 
+        
+    </h2>
+
+</div>
+</div>
+
+    <div class="cdata">
+<div id="Panel24">
+	
+
+
+
+
+
+
+    <CENTER><table id="tbDAInfo" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th class="auto-style7">Name</th>
+			<th class="auto-style9">Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td class="auto-style8">
+      Direct Access Info</td>
+			<td class="auto-style10">
+            <span id="txtDAQuery1">Query Failure Behavior                : Always fall back to LLMNR and NetBIOS                                        if the name does not exist in DNS or</span>
+        </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style8">
+        </td>
+			<td class="auto-style10">
+            <span id="txtDAQuery2">                                        if the DNS servers are unreachable                                        when on a private network</span>
+        </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+    </td>
+			<td class="auto-style9">
+            <span id="txtDAQueryResbehav">Query Resolution Behavior             : Resolve only IPv6 addresses for names</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+        </td>
+			<td class="auto-style9">
+            <span id="txtDANetLocBehav">Network Location Behavior             : Let Network ID determine when Direct                                        Access settings are to be used</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+        </td>
+			<td class="auto-style9">
+            <span id="txtDAMLocbehav">Machine Location                      : Inside corporate network</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+   </td>
+			<td class="auto-style9">
+            <span id="txtDASettings">Direct Access Settings                : Configured and Disabled</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+        </td>
+			<td class="auto-style9">
+            <span id="txtDNSSEC">DNSSEC Settings                       : Not Configured</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+
+
+
+
+
+
+
+
+
+<br /><br />
+
+
+
+
+
+
+
+</div>
+</div>   
+
+
+<div class="cheader">
+<div id="Panel25">
+	
+<input type="image" name="ImageButton13" id="ImageButton13" class="imgbtn" src="images/plusicon.png" /><h2>Latest 10 Patches installed 
+       
+    </h2>
+
+</div>
+</div>
+
+
+<div class="cdata">
+<div id="Panel26">
+	
+
+
+
+
+
+
+    <CENTER><table id="tbpatch" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th class="auto-style7">Name</th>
+			<th class="auto-style9">Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td class="auto-style8">
+        <span id="txtPatch1">HP - HIDClass - 4/11/2016 12:00:00 AM - 1.1.17.1</span>
+      </td>
+			<td class="auto-style10">
+            <span id="txtPatch1Date">11/23/2017 10:10:36 AM</span>
+        </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style8">
+        <span id="txtPatch2">Realtek driver update for Realtek PCIe GBE Family Controller</span>
+        </td>
+			<td class="auto-style10">
+            <span id="txtPatch2Date">11/23/2017 10:10:28 AM</span>
+        </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+            <span id="txtPatch3">Realtek Semiconduct Corp. driver update for Realtek PCIE CardReader</span>
+    </td>
+			<td class="auto-style9">
+            <span id="txtPatch3Date">11/23/2017 10:10:20 AM</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+        <span id="txtPatch4">Advanced Micro Devices, Inc driver update for AMD SMBus</span>
+        </td>
+			<td class="auto-style9">
+            <span id="txtPatch4Date">11/23/2017 10:10:13 AM</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+        <span id="txtPatch5">HP Development Company, L.P. - System - 9/23/2016 12:00:00 AM - 6.0.19.1</span>
+        </td>
+			<td class="auto-style9">
+            <span id="txtPatch5Date">11/23/2017 10:10:05 AM</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+            <span id="txtPatch6">Realtek Semiconduct Corp. driver update for Realtek PCIE CardReader</span>
+   </td>
+			<td class="auto-style9">
+            <span id="txtPatch6Date">11/23/2017 10:09:58 AM</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+             <span id="txtPatch7">HP Development Company, L.P. - System - 9/23/2016 12:00:00 AM - 6.0.19.1</span>
+        </td>
+			<td class="auto-style9">
+            <span id="txtPatch7Date">11/23/2017 10:08:48 AM</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+             <span id="txtPatch8">HP - HIDClass - 4/11/2016 12:00:00 AM - 1.1.17.1</span>
+        </td>
+			<td class="auto-style9">
+            <span id="txtPatch8Date">11/23/2017 10:08:41 AM</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+             <span id="txtPatch9">Realtek driver update for Realtek PCIe GBE Family Controller</span>
+        </td>
+			<td class="auto-style9">
+            <span id="txtPatch9Date">11/23/2017 10:08:32 AM</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+             <span id="txtPatch10">Advanced Micro Devices, Inc driver update for AMD SMBus</span>
+        </td>
+			<td class="auto-style9">
+            <span id="txtPatch10Date">11/23/2017 10:08:25 AM</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+
+
+
+
+
+
+
+
+
+<br /><br />
+
+
+
+
+
+
+
+</div>
+</div>   
+
+
+
+    <div class="cheader">
+<div id="Panel27">
+	
+<input type="image" name="ImageButton14" id="ImageButton14" class="imgbtn" src="images/plusicon.png" /><h2>Latest 10 Softwares installed 
+       
+    </h2>
+
+</div>
+</div>
+
+
+<div class="cdata">
+<div id="Panel28">
+	
+
+
+
+
+
+
+    <CENTER><table id="tbsoft" border="1" width="80%" cellspacing="0">
+		<tr bgcolor="#0099CC">
+			<th class="auto-style7">Name</th>
+			<th class="auto-style9">Description</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td class="auto-style8">
+        <span id="txtSoftCount1">1</span>
+      </td>
+			<td class="auto-style10">
+            <span id="txtSoft1">Google Chrome</span>
+        </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style8">
+        <span id="txtSoftCount2">2</span>
+        </td>
+			<td class="auto-style10">
+            <span id="txtSoft2">Mozilla Maintenance Service</span>
+        </td>
+			<td class="auto-style1" bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+            <span id="txtSoftCount3">3</span>
+    </td>
+			<td class="auto-style9">
+            <span id="txtSoft3">Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+        <span id="txtSoftCount4">4</span>
+        </td>
+			<td class="auto-style9">
+            <span id="txtSoft4">HOLMES End Point Solution</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+        <span id="txtSoftCount5">5</span>
+        </td>
+			<td class="auto-style9">
+            <span id="txtSoft5">Dolby Voice 2.7.0</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+            <span id="txtSoftCount6">6</span>
+   </td>
+			<td class="auto-style9">
+            <span id="txtSoft6">Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.21005</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+             <span id="txtSoftCount7">7</span>
+        </td>
+			<td class="auto-style9">
+            <span id="txtSoft7">Microsoft Silverlight</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+             <span id="txtSoftCount8">8</span>
+        </td>
+			<td class="auto-style9">
+            <span id="txtSoft8">Adobe Reader XI</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+             <span id="txtSoftCount9">9</span>
+        </td>
+			<td class="auto-style9">
+            <span id="txtSoft9">ConfigMgr Client Setup Bootstrap</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+		<tr>
+			<td class="auto-style7">
+             <span id="txtSoftCount10">10</span>
+        </td>
+			<td class="auto-style9">
+            <span id="txtSoft10">Microsoft SCCM</span>
+        </td>
+			<td bgcolor="#00FF33">Info</td>
+		</tr>
+	</table>
+	 </CENTER>  
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+<br />
+
+
+
+
+
+
+
+</div>
+</div>   
+
+
+    <br/>
+
+
+    <input type="submit" name="Button1" value="Click here to see the inserted data " onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;Button1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;WebForm3.aspx&quot;, false, false))" id="Button1" class="btn1" />
+
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+  
+   
+<p>|||||||||||| PC Health Check-up Report v10.0 Developed for WT-IMG |||||||||||| (c) 2016 All Rights Reserverd |||||||||| IMG::End User Computing |||||||||||||
+||||||</p>
+    
+     <input type="hidden" name="CompName2" id="CompName2" value="L-156075101" />
+   
+</div>
+   
+
+<input type="hidden" name="CollapsiblePanelExtender1_ClientState" id="CollapsiblePanelExtender1_ClientState" />
+<input type="hidden" name="CollapsiblePanelExtender2_ClientState" id="CollapsiblePanelExtender2_ClientState" />
+
+<input type="hidden" name="CollapsiblePanelExtender3_ClientState" id="CollapsiblePanelExtender3_ClientState" />
+
+
+<input type="hidden" name="CollapsiblePanelExtender4_ClientState" id="CollapsiblePanelExtender4_ClientState" />
+    
+<input type="hidden" name="CollapsiblePanelExtender5_ClientState" id="CollapsiblePanelExtender5_ClientState" />
+
+        
+<input type="hidden" name="CollapsiblePanelExtender6_ClientState" id="CollapsiblePanelExtender6_ClientState" />
+
+<input type="hidden" name="CollapsiblePanelExtender7_ClientState" id="CollapsiblePanelExtender7_ClientState" />
+
+<input type="hidden" name="CollapsiblePanelExtender8_ClientState" id="CollapsiblePanelExtender8_ClientState" />
+    <input type="hidden" name="CollapsiblePanelExtender9_ClientState" id="CollapsiblePanelExtender9_ClientState" />
+
+   <input type="hidden" name="CollapsiblePanelExtender10_ClientState" id="CollapsiblePanelExtender10_ClientState" />
+    
+   <input type="hidden" name="CollapsiblePanelExtender11_ClientState" id="CollapsiblePanelExtender11_ClientState" />
+   <input type="hidden" name="CollapsiblePanelExtender12_ClientState" id="CollapsiblePanelExtender12_ClientState" />
+
+     <input type="hidden" name="CollapsiblePanelExtender13_ClientState" id="CollapsiblePanelExtender13_ClientState" />
+     <input type="hidden" name="CollapsiblePanelExtender15_ClientState" id="CollapsiblePanelExtender15_ClientState" />
+
+
+
+
+
+
+     <input type="hidden" name="CollapsiblePanelExtender14_ClientState" id="CollapsiblePanelExtender14_ClientState" />
+
+
+
+     <input type="hidden" name="CollapsiblePanelExtender16_ClientState" id="CollapsiblePanelExtender16_ClientState" />
+
+
+      
+    <input type="hidden" name="CollapsiblePanelExtender17_ClientState" id="CollapsiblePanelExtender17_ClientState" />
+
+  <input type="hidden" name="CollapsiblePanelExtender18_ClientState" id="CollapsiblePanelExtender18_ClientState" />
+
+
+
+
+
+
+<a id="lnkDummy1" href="javascript:__doPostBack(&#39;lnkDummy1&#39;,&#39;&#39;)"></a>
+
+<div id="pnlPopup2" class="modalPopup" style="display: none">
+	
+    <div class="header">
+        IMG 
+    </div>
+    <div class="body">
+        
+<pre>&nbsp<font color="red" size="6px"><b> Oops!</b> </font> 
+     <font color="#0DA9D0" size="6px"><b>Something went wrong.</b></font></pre>
+   <p style="text-align:left">&nbsp  Please do not access this page directly instead of running the application.</p>
+   <p style="text-align:left"> &nbsp  Click on the below button to download PC Health Check-up from Self Service and to run again.</p>
+       
+       
+     &nbsp&nbsp
+
+        <a href="http://support.wipro.com" class ="btn"> Download and run PC Health Check</a>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender1_ClientState","CollapseControlID":"Panel1","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel1","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton1","SuppressPostBack":true,"id":"CollapsiblePanelExtender1"}, null, null, $get("Panel2"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender2_ClientState","CollapseControlID":"Panel3","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel3","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton2","SuppressPostBack":true,"id":"CollapsiblePanelExtender2"}, null, null, $get("Panel4"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender3_ClientState","CollapseControlID":"Panel5","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel5","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton3","SuppressPostBack":true,"id":"CollapsiblePanelExtender3"}, null, null, $get("Panel6"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender4_ClientState","CollapseControlID":"Panel7","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel7","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton4","SuppressPostBack":true,"id":"CollapsiblePanelExtender4"}, null, null, $get("Panel8"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender5_ClientState","CollapseControlID":"Panel9","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel9","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton5","SuppressPostBack":true,"id":"CollapsiblePanelExtender5"}, null, null, $get("Panel10"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender6_ClientState","CollapseControlID":"Panel11","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel11","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton6","SuppressPostBack":true,"id":"CollapsiblePanelExtender6"}, null, null, $get("Panel12"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender7_ClientState","CollapseControlID":"Panel13","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel13","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton7","SuppressPostBack":true,"id":"CollapsiblePanelExtender7"}, null, null, $get("Panel14"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender8_ClientState","CollapseControlID":"Panel15","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel15","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton8","SuppressPostBack":true,"id":"CollapsiblePanelExtender8"}, null, null, $get("Panel16"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender9_ClientState","CollapseControlID":"Panel17","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel17","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton9","SuppressPostBack":true,"id":"CollapsiblePanelExtender9"}, null, null, $get("Panel18"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender10_ClientState","CollapseControlID":"Panel19","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel19","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton10","SuppressPostBack":true,"id":"CollapsiblePanelExtender10"}, null, null, $get("Panel20"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender11_ClientState","CollapseControlID":"Panel21","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel21","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton11","SuppressPostBack":true,"id":"CollapsiblePanelExtender11"}, null, null, $get("Panel22"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender12_ClientState","CollapseControlID":"Panel23","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel23","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton12","SuppressPostBack":true,"id":"CollapsiblePanelExtender12"}, null, null, $get("Panel24"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender13_ClientState","CollapseControlID":"Panel25","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel25","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton13","SuppressPostBack":true,"id":"CollapsiblePanelExtender13"}, null, null, $get("Panel26"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender15_ClientState","CollapseControlID":"Panel29","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel29","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton15","SuppressPostBack":true,"id":"CollapsiblePanelExtender15"}, null, null, $get("Panel30"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender14_ClientState","CollapseControlID":"Panel27","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel27","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton14","SuppressPostBack":true,"id":"CollapsiblePanelExtender14"}, null, null, $get("Panel28"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender16_ClientState","CollapseControlID":"Panel31","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel31","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton16","SuppressPostBack":true,"id":"CollapsiblePanelExtender16"}, null, null, $get("Panel32"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender17_ClientState","CollapseControlID":"Panel33","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel33","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton17","SuppressPostBack":true,"id":"CollapsiblePanelExtender17"}, null, null, $get("Panel34"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"CollapsiblePanelExtender18_ClientState","CollapseControlID":"Panel35","Collapsed":true,"CollapsedImage":"images/plusicon.png","ExpandControlID":"Panel35","ExpandedImage":"images/minusicon.png","ImageControlID":"ImageButton18","SuppressPostBack":true,"id":"CollapsiblePanelExtender18"}, null, null, $get("Panel36"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"pnlPopup2","dynamicServicePath":"/pcdetails/WebForm2.aspx","id":"mpe1"}, null, null, $get("lnkDummy1"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>
